@@ -1,0 +1,15 @@
+node_modules/
+.cache/
+public
+
+*.env
+*.env.*
+
+.DS_Store
+.htmlhintrc
+.stylelintrc
+.eslintrc.json
+.idea
+!.github/*
+!.vscode/*
+!*.code-workspace

@@ -1,0 +1,17 @@
+main_menu:
+  - link: {
+      label: Cursos,
+      href: https://descola.org/cursos
+    }
+  - link: {
+      label: O Que é a Descola?,
+      href: https://descola.org/sobre
+    }
+  - link: {
+      label: Para empresas,
+      href: https://descola.org/empresas
+    }
+  - link: {
+      label: Blog,
+      to: /
+    }

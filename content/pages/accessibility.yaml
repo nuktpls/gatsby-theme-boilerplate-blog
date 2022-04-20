@@ -1,0 +1,17 @@
+page:
+  status: true
+  name: Accessibility
+  template: ONE_COLUMN
+  titleSeo: Descola
+configs:
+  type: ROW
+  heading: Accessibility
+content_configs:
+  type: MAIN
+  heading: Our commitment to you
+content: |
+  No __ORGANIZATION.NAME__, nosso objetivo é fornecer conteúdo para todos.
+  Os nossos clientes, incluindo aqueles que são mais idosos
+  e portadores de limitações físicas. Nosso site é credenciado acessível pelo
+  Ranking de Acessibilidade Digital, em conformidade com o nível AA
+  das Diretrizes de Acessibilidade de Conteúdo da Web (WCAG 2.1).

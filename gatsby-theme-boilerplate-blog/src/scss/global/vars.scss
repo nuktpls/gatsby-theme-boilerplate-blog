@@ -1,0 +1,48 @@
+// Colors
+$cta__color: #0093FF;
+$link__color: #2e2e2e;
+
+
+$primary: $cta__color;
+$primary_background__color: #E5F4FF;
+$primary_background: mix(white, $cta__color, 90%);
+$primary_bg_dark: mix(white, $cta__color, 35%);
+$primary_ultralight: mix(white, $cta__color, 80%);
+$primary_light: mix(white, $cta__color, 25%);
+$primary_dark: mix(black, $cta__color, 25%);
+$primary_ultradark: mix(black, $cta__color, 80%);
+
+$brand_black__color: #0c0c0c;
+$paragrahp_black__color: #212529;
+$grayscale_300__color: #e3e3e3;
+$grayscale_600__color: #a3a3a3;
+$color__light-grey: #999999;
+$selection_bg__color: #2e2e2e;
+$selection_txt__color: #fff;
+// Breakpoints
+// screen vars
+$widescreen__size: 1165px;
+$tablet__size: 768px;
+$tabletHack__size: 1025px;
+$tabletHackMinimal__size: 425px;
+$boxed__tabletHackMaxWidth: 730px;
+$small__size: 375px;
+$desktopIndexButtons__maxWidth: 520px;
+$mobileIndexButtons__maxWidth: 280px;
+$tabletIndexButtons__maxWidth: 350px;
+$boxed__maxWidth: 375px;
+$boxedDesktop__maxWidth: 1024px;
+$boxedMobile__maxWidth: 375px;
+//Spaces
+$s__space: 16pt;
+$heading__top-padding: 0;
+// typograph
+$main__font: 'Bona Nova', Arial, sans-serif;
+$second__font: 'Josefin Sans', Arial, sans-serif;
+$alternative__font: 'Arial';
+$m__fontSize: 17px;
+$h1__fontSize: 30pt;
+$h2__fontSize: 24pt;
+$h3__fontSize: 22pt;
+$h4__fontSize: 20pt;
+$h5__fontSize: 18pt;

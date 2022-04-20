@@ -1,0 +1,13 @@
+social_media:
+  - item: {
+      href: https://br.linkedin.com/school/descola,
+      icon: LinkedIn
+    }
+  - item: {
+      href: https://www.instagram.com/descolagram,
+      icon: Instagram
+    }
+  - item: {
+      href: https://www.facebook.com/descolasp,
+      icon: Facebook
+    }

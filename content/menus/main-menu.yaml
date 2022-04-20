@@ -1,0 +1,22 @@
+menu:
+  status: active
+  name: MAIN_MENU
+  items:
+    - item:
+        label: Cursos
+        href: https://descola.org/cursos
+    - item:
+        label: O Que é a Descola?
+        href: https://descola.org/sobre
+    - item:
+        label: Para empresas
+        href: https://descola.org/empresas
+    - item:
+        label: Blog
+        to: /
+    - item:
+        icon: bag
+    - item:
+        search_widget: true
+        search_label: Procure um curso
+        search_url_prefix: https://descola.org/cursos?search=
