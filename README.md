@@ -3,18 +3,19 @@
 
 ![Theme workflow](https://github.com/nuktpls/gatsby-theme-boilerplate-blog/actions/workflows/master.yaml/badge.svg)
 
-<!--
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8f72a87b-d317-4307-96ec-093fb0263d95/deploy-status)](https://app.netlify.com/sites/boilerplate-blog/deploys)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=bugs)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/18254200-644c-4919-a835-b51efd328337/deploy-status)](https://app.netlify.com/sites/boilerplate-blog/deploys)
 
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
 
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
 
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
 
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp) -->
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
 
 ---
 

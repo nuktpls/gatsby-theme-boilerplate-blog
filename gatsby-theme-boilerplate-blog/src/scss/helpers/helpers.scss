@@ -115,14 +115,14 @@ body {
     $size: 8px;
     width: $size;
     height: $size;
-    background-color: $primary-ultradark;
+    background-color: $cta__contrast_color;
 }
 
 .cursor-dot-outline {
     $size: 40px;
     width: $size;
     height: $size;
-    background-color: rgba($primary-light, 0.5);
+    background-color: rgba($primary_light, 0.5);
 }
 
 
@@ -135,4 +135,43 @@ body {
 #___gatsby{
 	z-index: 1;
 	position: relative;
+}
+
+
+.wrapper-hr{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0;
+	span.ht-top{
+		&:before{
+			content: '';
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 100%;
+			height: 10px;
+			border-right: 1px solid #999;
+		}
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 1px;
+		border-top: 2px solid black;
+		border-bottom: 1px dashed #999;
+	}
+	
+	.inner-hr{
+		max-width: 40%;
+    width: 100%;
+		&:nth-child(3){
+			transform: scaleX(-1);
+		}
+	}
+	.boilerplate-heading {
+		text-align: center;
+    max-width: 40%;
+    width: auto;
+	}
 }

@@ -92,7 +92,7 @@
 	// padding: 0 10px;
 		font-size:18px;
 		font-weight: 300;
-		font-family: $main__font;
+		font-family: $second__font;
 		color: $paragrahp_black__color;
 		p{
 
@@ -124,8 +124,12 @@
 		}
 		h1, h2, h3, h4, h5, h6{
 			margin: 15px 0;
-			font-family: $second__font;
+			font-family: $main__font;
 			font-weight: 900;
+			text-transform: uppercase;
+			& strong{
+			font-weight: 900;
+			}
 		}
 		h2{
 			font-size:26px;

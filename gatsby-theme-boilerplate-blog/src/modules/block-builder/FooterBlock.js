@@ -19,7 +19,7 @@ const FooterBlock = ({ footerLogo, featurePosts }) => {
   const about_phone_state_prefix = col1.about_phone_state_prefix
   return (
     <footer id="site-footer">
-      <Layout type="ROW" opt={{ bgColor: '#222', classes: 'footer' }}>
+      <Layout type="ROW" opt={{ classes: 'boilerplate-footer' }}>
         <Layout
           type="ROW"
           opt={{ isBoxed: true, numColumns: 4, classes: 'footer-columns' }}

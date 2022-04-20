@@ -60,7 +60,7 @@ export const useSiteMetadatas = () => {
             }
           }
         }
-        imgHolder: file(relativePath: { eq: "descola-image.png" }) {
+        imgHolder: file(relativePath: { eq: "boilerplate-squared.png" }) {
           childrenImageSharp {
             gatsbyImageData(
               width: 76
@@ -70,7 +70,7 @@ export const useSiteMetadatas = () => {
             )
           }
         }
-        cardImage: file(relativePath: { eq: "descola-banner.jpg" }) {
+        cardImage: file(relativePath: { eq: "boilerplate-banner.jpg" }) {
           childrenImageSharp {
             gatsbyImageData(
               width: 1200

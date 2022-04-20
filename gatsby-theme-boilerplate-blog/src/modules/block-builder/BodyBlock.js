@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Layout from 'gatsby-layout-builder'
 
 const BodyBlock = ({ children, opt }) => {
-  const delay = 18
+  const delay = 8
 
   const dot = useRef(null)
   const dotOutline = useRef(null)

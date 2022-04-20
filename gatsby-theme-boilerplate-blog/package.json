@@ -21,8 +21,8 @@
     "name": "Descola",
     "url": "https://descola.org/",
     "email": "descola@descola.com.br",
-    "logo": "descola-banner.png",
-    "cardImage": "descola-banner.png",
+    "logo": "boilerplate-banner.png",
+    "cardImage": "boilerplate-banner.png",
     "phone": "+5516981061234"
   },
   "repository": "https://github.com/nuktpls/gatsby-theme-boilerplate-blog",
@@ -46,8 +46,8 @@
   "displayManifest": "fullscreen",
   "iconManifest": "favicon-96px.png",
   "importFont": {
-    "font01": "Roboto Slab:100,300,400,500,600,700",
-    "font02": "Montserrat:100,300,500,600"
+    "font01": "Bona Nova:100,300,400,500,600,700",
+    "font02": "Josefin Sans:100,300,500,600,900"
   },
   "postsPerPage": 9,
   "scripts": {
