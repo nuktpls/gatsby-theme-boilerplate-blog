@@ -3,6 +3,7 @@
 
 ![Theme workflow](https://github.com/nuktpls/gatsby-theme-boilerplate-blog/actions/workflows/master.yaml/badge.svg)
 
+<!--
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8f72a87b-d317-4307-96ec-093fb0263d95/deploy-status)](https://app.netlify.com/sites/boilerplate-blog/deploys)
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=bugs)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
@@ -13,7 +14,7 @@
 
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
 
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_descola-temp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_descola-temp) -->
 
 ---
 
