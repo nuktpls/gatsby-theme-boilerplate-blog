@@ -1,7 +1,6 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-// import slugify from './slugify'
 const _ = require('lodash')
 
 const InsertHTML = ({ type, params, opt, children, bgOpt, bgImg }) => {

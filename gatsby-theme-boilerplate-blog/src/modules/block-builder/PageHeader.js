@@ -1,5 +1,5 @@
 import React from 'react'
-// import slugify from '@tools/slugify'
+
 const _ = require('lodash')
 import Layout from 'gatsby-layout-builder'
 import MainWrapper from './MainWrapper'
