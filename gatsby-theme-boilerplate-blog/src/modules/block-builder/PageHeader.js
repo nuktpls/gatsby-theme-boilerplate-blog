@@ -1,12 +1,13 @@
 import React from 'react'
-import slugify from '@tools/slugify'
+// import slugify from '@tools/slugify'
+const _ = require('lodash')
 import Layout from 'gatsby-layout-builder'
 import MainWrapper from './MainWrapper'
 const PageHeader = ({ title, logotipoJogoMemoria, paragraph }) => {
   if (!title) {
     return null
   }
-  const titleSlug = slugify(title)
+  const titleSlug = _.kebabCase(title)
 
   return (
     <MainWrapper title={titleSlug}>
