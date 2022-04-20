@@ -1,116 +1,116 @@
 {
-	"name": "gatsby-theme-boilerplate-blog",
-	"version": "0.1.0",
-	"private": false,
-	"module": "index.js",
-	"keywords": [
-		"descola",
-		"cursos",
-		"curso online",
-		"power skills",
-		"soft skills",
-		"habilidades",
-		"escola online"
-	],
-	"description": "A Descola é uma escola de cursos online com foco nas power skills. Junte-se aos mais de 100.000 alunos que já transformaram suas vidas com novas habilidades!",
-	"author": {
-		"name": "Milton Bolonha",
-		"email": "miltonbolonha@gmail.com"
-	},
-	"organization": {
-		"name": "Descola",
-		"url": "https://descola.org/",
-		"email": "descola@descola.com.br",
-		"logo": "descola-banner.png",
-		"cardImage": "descola-banner.png",
-		"phone": "+5516981061234"
-	},
-	"repository": "https://github.com/nuktpls/gatsby-theme-boilerplate-blog",
-	"urlPrefix": "/",
-	"appName": "Blog - Descola",
-	"appLogic": "Blog",
-	"dateCreated": "05 de março de 2022",
-	"siteUrl": "https://boilerplate-blog.netlify.app/",
-	"searchBaseUrl": "https://descola.org/cursos?search=",
-	"clientOrg": "Descola",
-	"clientShortName": "Descola",
-	"clientSocial": {
-		"instagram": "https://www.instagram.com/descolagram/",
-		"facebook": "https://www.facebook.com/descolasp/",
-		"linkedIn": "https://br.linkedin.com/school/descola",
-		"youtube": "https://www.youtube.com/c/DescolaOrg",
-		"twitter": "Descola_"
-	},
-	"themeColor": "#fc4303",
-	"backgroundColor": "#fff",
-	"displayManifest": "fullscreen",
-	"iconManifest": "favicon-96px.png",
-	"importFont": {
-		"font01": "Roboto Slab:100,300,400,500,600,700",
-		"font02": "Montserrat:100,300,500,600"
-	},
-	"postsPerPage": 9,
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "GATSBY_CONCURRENT_DOWNLOAD=25 gatsby build",
-		"develop": "gatsby develop"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"@babel/cli": "^7.17.6",
-		"@babel/core": "^7.17.9",
-		"@babel/preset-env": "^7.16.11",
-		"react-scripts": "^5.0.0",
-		"svg-react-loader": "^0.4.6"
-	},
-	"dependencies": {
-		"@mdx-js/mdx": "^1.6.22",
-		"@mdx-js/react": "^1.6.22",
-		"gatsby-layout-builder": "^0.7.80",
-		"gatsby-layout-builder-a11y": "^0.1.3",
-		"gatsby-layout-builder-seo": "^0.4.81",
-		"gatsby-plugin-alias-imports": "^1.0.5",
-		"gatsby-plugin-anchor-links": "^1.2.1",
-		"gatsby-plugin-catch-links": "^4.11.0",
-		"gatsby-plugin-google-fonts": "^1.0.1",
-		"gatsby-plugin-image": "^2.12.1",
-		"gatsby-plugin-mdx": "^3.11.1",
-		"gatsby-plugin-netlify": "^4.2.0",
-		"gatsby-plugin-netlify-cms": "^6.11.0",
-		"gatsby-plugin-offline": "^5.11.1",
-		"gatsby-plugin-react-svg": "^3.1.0",
-		"gatsby-plugin-sass": "^5.11.1",
-		"gatsby-plugin-sharp": "^4.12.1",
-		"gatsby-remark-images": "^6.11.1",
-		"gatsby-remark-lazy-load": "^1.0.2",
-		"gatsby-remark-relative-images": "^2.0.2",
-		"gatsby-source-filesystem": "^4.12.1",
-		"gatsby-transformer-remark": "^5.11.1",
-		"gatsby-transformer-sharp": "^4.12.1",
-		"gatsby-transformer-yaml": "^4.11.0",
-		"netlify-cms-app": "^2.15.70",
-		"react-icons": "^4.3.1",
-		"sass": "^1.50.0"
-	},
-	"peerDependencies": {
-		"gatsby": "^4.12.0",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
-	},
-	"publishConfig": {
-		"access": "public",
-		"@nuktpls:registry": "https://npm.pkg.github.com"
-	}
+  "name": "gatsby-theme-boilerplate-blog",
+  "version": "0.1.1",
+  "private": false,
+  "module": "index.js",
+  "keywords": [
+    "descola",
+    "cursos",
+    "curso online",
+    "power skills",
+    "soft skills",
+    "habilidades",
+    "escola online"
+  ],
+  "description": "A Descola é uma escola de cursos online com foco nas power skills. Junte-se aos mais de 100.000 alunos que já transformaram suas vidas com novas habilidades!",
+  "author": {
+    "name": "Milton Bolonha",
+    "email": "miltonbolonha@gmail.com"
+  },
+  "organization": {
+    "name": "Descola",
+    "url": "https://descola.org/",
+    "email": "descola@descola.com.br",
+    "logo": "descola-banner.png",
+    "cardImage": "descola-banner.png",
+    "phone": "+5516981061234"
+  },
+  "repository": "https://github.com/nuktpls/gatsby-theme-boilerplate-blog",
+  "urlPrefix": "/",
+  "appName": "Blog - Descola",
+  "appLogic": "Blog",
+  "dateCreated": "05 de março de 2022",
+  "siteUrl": "https://boilerplate-blog.netlify.app/",
+  "searchBaseUrl": "https://descola.org/cursos?search=",
+  "clientOrg": "Descola",
+  "clientShortName": "Descola",
+  "clientSocial": {
+    "instagram": "https://www.instagram.com/descolagram/",
+    "facebook": "https://www.facebook.com/descolasp/",
+    "linkedIn": "https://br.linkedin.com/school/descola",
+    "youtube": "https://www.youtube.com/c/DescolaOrg",
+    "twitter": "Descola_"
+  },
+  "themeColor": "#fc4303",
+  "backgroundColor": "#fff",
+  "displayManifest": "fullscreen",
+  "iconManifest": "favicon-96px.png",
+  "importFont": {
+    "font01": "Roboto Slab:100,300,400,500,600,700",
+    "font02": "Montserrat:100,300,500,600"
+  },
+  "postsPerPage": 9,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "GATSBY_CONCURRENT_DOWNLOAD=25 gatsby build",
+    "develop": "gatsby develop"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "react-scripts": "^5.0.0",
+    "svg-react-loader": "^0.4.6"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby-layout-builder": "^0.7.80",
+    "gatsby-layout-builder-a11y": "^0.1.3",
+    "gatsby-layout-builder-seo": "^0.4.81",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-catch-links": "^4.11.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^2.12.1",
+    "gatsby-plugin-mdx": "^3.11.1",
+    "gatsby-plugin-netlify": "^4.2.0",
+    "gatsby-plugin-netlify-cms": "^6.11.0",
+    "gatsby-plugin-offline": "^5.11.1",
+    "gatsby-plugin-react-svg": "^3.1.0",
+    "gatsby-plugin-sass": "^5.11.1",
+    "gatsby-plugin-sharp": "^4.12.1",
+    "gatsby-remark-images": "^6.11.1",
+    "gatsby-remark-lazy-load": "^1.0.2",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^4.12.1",
+    "gatsby-transformer-remark": "^5.11.1",
+    "gatsby-transformer-sharp": "^4.12.1",
+    "gatsby-transformer-yaml": "^4.11.0",
+    "netlify-cms-app": "^2.15.70",
+    "react-icons": "^4.3.1",
+    "sass": "^1.50.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^4.12.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@nuktpls:registry": "https://npm.pkg.github.com"
+  }
 }
