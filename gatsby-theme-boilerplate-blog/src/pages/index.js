@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { graphql } from 'gatsby'
 import { getSrc } from 'gatsby-plugin-image'
 
@@ -15,6 +15,10 @@ import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import AccessibilityBlock from '@BlockBuilder/AccessibilityBlock'
 
 const IndexPage = props => {
+  const [isFeatured, setIsFeatured] = useState(null)
+  function setIsFeaturedState(isFeatured) {
+    setIsFeatured(isFeatured)
+  }
   const {
     cardImage,
     footerThreeMarkdowRemark,
@@ -36,6 +40,19 @@ const IndexPage = props => {
     themeColor,
   } = site.siteMetadata
   const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
+
+  const findItem = postsList => {
+    let x = []
+    postsList.map(e => {
+      // const yesSir = .find(isFeatured)
+      e.node.frontmatter.featuredPost === true ? x.push(e) : null
+      // console.log('x')
+      // console.log(x)
+    })
+    return x
+  }
+
+  const featuredPosts = findItem(posts)
 
   return (
     <BodyBlock opt={{ classes: 'blog-list' }}>
@@ -126,11 +143,27 @@ const IndexPage = props => {
         opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
       >
         <main className="main-container" id="site-content" role="list">
-          <HeadingBlock importance={10}>Posts</HeadingBlock>
+          <HeadingBlock importance={10} width={400}>
+            Posts
+          </HeadingBlock>
 
           <PostsBlock
             postsPerPage={site.siteMetadata.postsPerPage}
             postList={posts}
+            typeLoad={'push'} // or false
+            // readMoreText="Ler Mais"
+            pagination={{
+              loadMoreBtn: true,
+              loadMore: 'Ler Mais',
+            }}
+          />
+          <HeadingBlock importance={10} width={400}>
+            Featured Posts
+          </HeadingBlock>
+
+          <PostsBlock
+            postsPerPage={site.siteMetadata.postsPerPage}
+            postList={featuredPosts}
             typeLoad={'push'} // or false
             // readMoreText="Ler Mais"
             pagination={{
@@ -165,6 +198,7 @@ export const queryAtividade = graphql`
             date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
             title
             tags
+            featuredPost
             featuredImage {
               childrenImageSharp {
                 gatsbyImageData(

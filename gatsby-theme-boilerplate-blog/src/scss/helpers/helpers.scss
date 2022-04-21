@@ -52,7 +52,9 @@
 	color: #fff;
 }
 .highlight-img{
-	display: none!important;
+	// display: none!important;
+	margin: 20px 0 40px;
+	display: block;
 }
 
 
@@ -161,10 +163,11 @@ body {
 		border-top: 2px solid black;
 		border-bottom: 1px dashed #999;
 	}
-	
+
 	.inner-hr{
-		max-width: 40%;
-    width: 100%;
+		max-width: 400px;
+    width: 40%;
+    min-width: 20%;
 		&:nth-child(3){
 			transform: scaleX(-1);
 		}

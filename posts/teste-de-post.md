@@ -6,7 +6,7 @@ tags:
   - tasOne
   - tatwo
   - tagthree
-featuredPost: true
+featuredPost: false
 featuredImage: ../posts/images/placeholder-01.jpg
 ---
 

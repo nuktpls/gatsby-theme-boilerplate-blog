@@ -15,7 +15,7 @@
 		background-color: #111e24;
 		min-height: 270px;
 		width: 100%;
-		max-width: 720px;
+		max-width: 1020px;
 		margin: 0 auto;
 		.post.boxed-column{
 		padding: 0 10px;
@@ -43,7 +43,7 @@
 
 }
 .boxed-column.main-post{
-	max-width: 720px;
+	max-width: 1020px;
 	margin: 0 auto;
 }
 }
@@ -90,12 +90,13 @@
 	.container {
 		.post-article-content {
 	// padding: 0 10px;
-		font-size:18px;
+		font-size:20px;
 		font-weight: 300;
-		font-family: $second__font;
 		color: $paragrahp_black__color;
 		p{
-
+		font-family: $main__font;
+		font-weight: 100;
+			// line-height: 28px;
 			margin-bottom: 16px;
 		}
 		a{
@@ -124,7 +125,7 @@
 		}
 		h1, h2, h3, h4, h5, h6{
 			margin: 15px 0;
-			font-family: $main__font;
+			font-family: $second__font;
 			font-weight: 900;
 			text-transform: uppercase;
 			& strong{
