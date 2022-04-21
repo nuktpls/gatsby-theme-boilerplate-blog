@@ -144,26 +144,27 @@ const IndexPage = props => {
       >
         <main className="main-container" id="site-content" role="list">
           <HeadingBlock importance={10} width={400}>
-            Posts
-          </HeadingBlock>
-
-          <PostsBlock
-            postsPerPage={site.siteMetadata.postsPerPage}
-            postList={posts}
-            typeLoad={'push'} // or false
-            // readMoreText="Ler Mais"
-            pagination={{
-              loadMoreBtn: true,
-              loadMore: 'Ler Mais',
-            }}
-          />
-          <HeadingBlock importance={10} width={400}>
             Featured Posts
           </HeadingBlock>
 
           <PostsBlock
             postsPerPage={site.siteMetadata.postsPerPage}
             postList={featuredPosts}
+            typeLoad={'push'} // or false
+            // readMoreText="Ler Mais"
+            pagination={{
+              loadMoreBtn: true,
+              loadMore: 'Ler Mais',
+            }}
+            classes="colorME"
+          />
+          <HeadingBlock importance={10} width={400}>
+            Posts
+          </HeadingBlock>
+
+          <PostsBlock
+            postsPerPage={site.siteMetadata.postsPerPage}
+            postList={posts}
             typeLoad={'push'} // or false
             // readMoreText="Ler Mais"
             pagination={{
