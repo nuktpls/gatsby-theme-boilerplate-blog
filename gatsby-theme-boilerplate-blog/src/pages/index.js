@@ -5,14 +5,16 @@ import { getSrc } from 'gatsby-plugin-image'
 import Layout from 'gatsby-layout-builder'
 import SeoContainer from 'gatsby-layout-builder-seo'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
-import DescolaLogo from '@Images/boilerplate-blog-logo.svg'
-import DescolaLogoDark from '@Images/boilerplate-squared.svg'
+import BoilerplateLogo from '@Images/boilerplate-blog-logo.svg'
+import BoilerplateLogoDark from '@Images/boilerplate-squared.svg'
 import BodyBlock from '@BlockBuilder/BodyBlock'
 import HeaderBlock from '@BlockBuilder/HeaderBlock'
 import FooterBlock from '@BlockBuilder/FooterBlock'
 import PostsBlock from '@BlockBuilder/PostsBlock'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import AccessibilityBlock from '@BlockBuilder/AccessibilityBlock'
+
+import { FiInstagram, FiFacebook, FiTwitter, FiGithub } from 'react-icons/fi'
 
 const IndexPage = props => {
   const [isFeatured, setIsFeatured] = useState(null)
@@ -24,6 +26,10 @@ const IndexPage = props => {
     footerThreeMarkdowRemark,
     imgHolder,
     site,
+    githubImg,
+    instaImg,
+    twitterImg,
+    whatsImg,
   } = useSiteMetadatas()
   const { data } = props
   const posts = data.allMarkdownRemark.edges
@@ -53,7 +59,11 @@ const IndexPage = props => {
   }
 
   const featuredPosts = findItem(posts)
-
+  // githubImg
+  // instaImg,
+  // twitterImg
+  // whatsImg
+  console.log(githubImg)
   return (
     <BodyBlock opt={{ classes: 'blog-list' }}>
       <SeoContainer
@@ -137,13 +147,13 @@ const IndexPage = props => {
       // }}
       />
 
-      <HeaderBlock logotipoSvg={<DescolaLogo />} />
+      <HeaderBlock logotipoSvg={<BoilerplateLogo />} />
       <Layout
         type="ROW"
         opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
       >
         <main className="main-container" id="site-content" role="list">
-          <HeadingBlock importance={10} width={400}>
+          <HeadingBlock importance={9} width={400}>
             Featured Posts
           </HeadingBlock>
 
@@ -158,7 +168,7 @@ const IndexPage = props => {
             }}
             classes="colorME"
           />
-          <HeadingBlock importance={10} width={400}>
+          <HeadingBlock importance={9} width={400}>
             Posts
           </HeadingBlock>
 
@@ -171,11 +181,103 @@ const IndexPage = props => {
               loadMoreBtn: true,
               loadMore: 'Ler Mais',
             }}
+            classes="colorME"
           />
         </main>
       </Layout>
+      <Layout type={'ROW'} opt={{ isBoxed: true }}>
+        <HeadingBlock importance={9} width={400}>
+          Social
+        </HeadingBlock>
+
+        <Layout
+          type={'ROW'}
+          opt={{
+            isBoxed: true,
+            alignTo: 'center',
+            classes: 'social-icons',
+            numColumns: 4,
+          }}
+        >
+          <div className="social-icon-wrapper">
+            {/* <FiInstagram /> */}
+            {/* githubImg */}
+            <Layout
+              type="BLOCK_IMAGE"
+              opt={{
+                queryCard: githubImg,
+                hasLink: true,
+                link: 'linkUrl',
+                staticImage: true,
+                publicImageUrl: githubImg,
+                alt: title,
+                placeholder: 'NONE',
+                classes: 'colorME roundME bottom-social',
+              }}
+            />
+          </div>
+          <div className="social-icon-wrapper">
+            {/* <FiFacebook /> */}
+            <Layout
+              type="BLOCK_IMAGE"
+              opt={{
+                queryCard: instaImg,
+                hasLink: true,
+                link: 'linkUrl',
+                staticImage: true,
+                publicImageUrl: instaImg,
+                alt: title,
+                placeholder: 'NONE',
+                classes: 'colorME roundME bottom-social',
+              }}
+            />
+          </div>
+          <div className="social-icon-wrapper">
+            {/* <FiTwitter /> */}
+            <Layout
+              type="BLOCK_IMAGE"
+              opt={{
+                queryCard: twitterImg,
+                hasLink: true,
+                link: 'linkUrl',
+                staticImage: true,
+                publicImageUrl: twitterImg,
+                alt: title,
+                placeholder: 'NONE',
+                classes: 'colorME roundME bottom-social',
+              }}
+            />
+          </div>
+          <div className="social-icon-wrapper">
+            {/* <FiGithub /> */}
+            <Layout
+              type="BLOCK_IMAGE"
+              opt={{
+                queryCard: whatsImg,
+                hasLink: true,
+                link: 'linkUrl',
+                staticImage: true,
+                publicImageUrl: whatsImg,
+                alt: title,
+                placeholder: 'NONE',
+                classes: 'colorME roundME bottom-social',
+              }}
+            />
+          </div>
+        </Layout>
+        <Layout
+          type={'ROW'}
+          opt={{ isBoxed: true, classes: 'logo-bottom-wrapper' }}
+        >
+          <BoilerplateLogo className="m0auto logo-bottom" />
+          <p className="m0auto bottom-paragraph">
+            © 2022 BOILERPLATE TIMES - TODOS OS DIREITOS RESERVADOS
+          </p>
+        </Layout>
+        <hr />
+      </Layout>
       {/* <FooterBlock
-        footerLogo={<DescolaLogoDark />}
+        footerLogo={<BoilerplateLogoDark />}
         featurePosts={footerThreeMarkdowRemark.edges}
       /> */}
     </BodyBlock>

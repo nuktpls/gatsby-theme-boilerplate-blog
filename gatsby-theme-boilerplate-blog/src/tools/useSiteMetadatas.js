@@ -80,6 +80,50 @@ export const useSiteMetadatas = () => {
             )
           }
         }
+        githubImg: file(relativePath: { eq: "github.png" }) {
+          childrenImageSharp {
+            gatsbyImageData(
+              width: 120
+              height: 120
+              placeholder: NONE
+              quality: 100
+              backgroundColor: "transparent"
+            )
+          }
+        }
+        instaImg: file(relativePath: { eq: "insta.png" }) {
+          childrenImageSharp {
+            gatsbyImageData(
+              width: 120
+              height: 120
+              placeholder: NONE
+              quality: 100
+              backgroundColor: "transparent"
+            )
+          }
+        }
+        twitterImg: file(relativePath: { eq: "twitter.png" }) {
+          childrenImageSharp {
+            gatsbyImageData(
+              width: 120
+              height: 120
+              placeholder: NONE
+              quality: 100
+              backgroundColor: "transparent"
+            )
+          }
+        }
+        whatsImg: file(relativePath: { eq: "whats.png" }) {
+          childrenImageSharp {
+            gatsbyImageData(
+              width: 120
+              height: 120
+              placeholder: NONE
+              quality: 100
+              backgroundColor: "transparent"
+            )
+          }
+        }
       }
     `
   )

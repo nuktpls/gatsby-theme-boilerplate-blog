@@ -16,6 +16,8 @@ const PostsBlock = ({
   pagination,
   postsPerPage,
   classes,
+  mouseOverEvent,
+  mouseOutEvent,
 }) => {
   const [currentFirstItem, setCurrentFirstItem] = useState(0)
   function handleCurrentFirstItem(current) {
@@ -62,6 +64,8 @@ const PostsBlock = ({
                   key={i}
                   tags={tags}
                   classes={classes}
+                  mouseOverEvent={mouseOverEvent}
+                  mouseOutEvent={mouseOutEvent}
                 />
               )
             }

@@ -10,9 +10,19 @@ const PostCard = ({
   excerpt,
   readMoreText,
   classes,
+  mouseOverEvent,
+  mouseOutEvent,
 }) => {
+  console.log('mouseOverEvent')
+  console.log(mouseOverEvent)
   return (
-    <div className="post-card" role="listitem" aria-label="Cartão de Postagem">
+    <div
+      className="post-card"
+      role="listitem"
+      aria-label="Cartão de Postagem"
+      onMouseOut={mouseOutEvent}
+      onMouseOver={mouseOverEvent}
+    >
       <Layout
         type="BLOCK_IMAGE"
         opt={{

@@ -36,18 +36,7 @@
 			// .gatsby-image-wrapper{
 			// 	height: 100%;
 			// }
-			.colorME.gatsby-image-wrapper:before{
-				content: '';
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: $cta__color;
-				mix-blend-mode: color;
-				z-index: 5;
-			}
+
 			&:hover{
 				border: 2px solid $primary_light;
 			}
@@ -76,9 +65,10 @@
 
 				h2{
 					font-size: 20px;
-					font-family: $second__font;
+					font-family: $third__font;
 					line-height: 30px;
 					// margin-bottom: 0px;
+					font-weight: 400;
 					& a:hover{
 						color: $cta__color;
 					}

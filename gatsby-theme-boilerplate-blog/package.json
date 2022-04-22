@@ -47,7 +47,8 @@
   "iconManifest": "favicon-96px.png",
   "importFont": {
     "font01": "Bona Nova:100,300,400,500,600,700",
-    "font02": "Noto Serif:100,300,500,600,900"
+    "font02": "Josefin Sans:100,300,500,600,900",
+    "font03": "Noto Serif:400,700"
   },
   "postsPerPage": 9,
   "scripts": {
