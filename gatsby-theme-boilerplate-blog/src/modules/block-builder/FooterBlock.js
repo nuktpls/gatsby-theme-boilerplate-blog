@@ -17,6 +17,10 @@ const FooterBlock = ({ footerLogo, featurePosts }) => {
   const about_phone = col1.about_phone
   const about_phone_country_prefix = col1.about_phone_country_prefix
   const about_phone_state_prefix = col1.about_phone_state_prefix
+  const about_heading =
+    col1.about_heading && col1.about_widget ? (
+      <h3>{col1.about_heading}</h3>
+    ) : null
   return (
     <footer id="site-footer">
       <Layout type="ROW" opt={{ classes: 'boilerplate-footer' }}>
@@ -26,9 +30,7 @@ const FooterBlock = ({ footerLogo, featurePosts }) => {
         >
           {col1?.about_widget ? (
             <div className="footer-infos">
-              {col1.about_heading && col1.about_widget ? (
-                <h3>{col1.about_heading}</h3>
-              ) : null}
+              {about_heading}
               {col1.about_p?.map((text, i) => (
                 <p key={i}>{text.p}</p>
               ))}

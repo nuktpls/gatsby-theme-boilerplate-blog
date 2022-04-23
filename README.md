@@ -19,9 +19,11 @@
 
 ---
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nuktpls/gatsby-theme-boilerplate-blog)
+
 ---
 
-# NÜktpls Boilerplate Times
+# NÜktpls: Boilerplate Blog
 
 #### LAYOUT BUILDER _by [Edu4Dev](https://edu4.dev)_
 
@@ -29,11 +31,11 @@
 
 **Engine SubAgent:** Gatsby Theme
 
-**Gatsby Plugin Name:** NÜktpls Boilerplate Times
+**Gatsby Plugin Name:** NÜktpls: Boilerplate Blog
 
 **Author:** Edu4Dev - Milton Bolonha
 
-**Description:** NÜktpls Boilerplate Times is the platform
+**Description:** NÜktpls: Boilerplate Blog is the platform
 web creators choose to build professional GatsbyJS HTML,
 plus SCSS basic structure, such as rows, number of columns,
 background color, header, responsive main menu,

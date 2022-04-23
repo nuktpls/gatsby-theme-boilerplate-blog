@@ -124,6 +124,17 @@ export const useSiteMetadatas = () => {
             )
           }
         }
+        bannerContent: file(relativePath: { eq: "banner-content.png" }) {
+          childrenImageSharp {
+            gatsbyImageData(
+              width: 950
+              height: 59
+              placeholder: NONE
+              quality: 100
+              backgroundColor: "transparent"
+            )
+          }
+        }
       }
     `
   )
