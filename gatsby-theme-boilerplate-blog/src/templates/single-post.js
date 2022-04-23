@@ -4,14 +4,15 @@ import { getSrc } from 'gatsby-plugin-image'
 
 import SeoContainer from 'gatsby-layout-builder-seo'
 
-import DescolaLogo from '@Images/boilerplate-blog-logo.svg'
-import DescolaLogoDark from '@Images/boilerplate-squared.svg'
+import BoileplateLogo from '@Images/boilerplate-blog-logo.svg'
+import BoileplateLogoDark from '@Images/boilerplate-squared.svg'
 
 import Layout from 'gatsby-layout-builder'
 import BodyBlock from '@BlockBuilder/BodyBlock'
 import AccessibilityBlock from '@BlockBuilder/AccessibilityBlock'
 import HeaderBlock from '@BlockBuilder/HeaderBlock'
 import FooterBlock from '@BlockBuilder/FooterBlock'
+import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
 
 import SinglePostBlock from '@BlockBuilder/SinglePostBlock'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
@@ -22,6 +23,10 @@ const SinglePost = ({ data, location }) => {
     imgHolder,
     site,
     cardImage,
+    githubImg,
+    instaImg,
+    twitterImg,
+    whatsImg,
   } = useSiteMetadatas()
   const {
     author,
@@ -60,7 +65,7 @@ const SinglePost = ({ data, location }) => {
           // modifiedWebsiteDate: modifiedWebsiteDate,
           createdPageDate: post.frontmatter.date,
           // modifiedPageDate: modifiedPageDate,
-          pageTitle: `${post.frontmatter.title} - Descola`,
+          pageTitle: `${post.frontmatter.title} - Boileplate`,
           pageDescription: post.excerpt,
           authorWebsiteData: organization.url,
           authorPostData: post.frontmatter.author,
@@ -96,7 +101,7 @@ const SinglePost = ({ data, location }) => {
         }}
       />
       <AccessibilityBlock />
-      <HeaderBlock logotipoSvg={<DescolaLogo />} />
+      <HeaderBlock logotipoSvg={<BoileplateLogo />} />
       <main>
         {/* post?.frontmatter?.featuredImage?.childrenImageSharp[0] */}
         {/* .gatsbyImageData.images.fallback.src, */}
@@ -109,9 +114,15 @@ const SinglePost = ({ data, location }) => {
           title={post.frontmatter.title}
           tags={post.frontmatter.tags}
         />
+        <NewFooterBlock
+          githubImg={githubImg}
+          instaImg={instaImg}
+          twitterImg={twitterImg}
+          whatsImg={whatsImg}
+        />
       </main>
       {/* <FooterBlock
-				footerLogo={<DescolaLogoDark />}
+				footerLogo={<BoileplateLogoDark />}
 				featurePosts={footerThreeMarkdowRemark.edges}
 			/> */}
     </BodyBlock>

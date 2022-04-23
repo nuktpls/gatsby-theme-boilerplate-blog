@@ -1,15 +1,15 @@
 main_menu:
   - link: {
       label: Cursos,
-      href: https://descola.org/cursos
+      href: /cursos
     }
   - link: {
-      label: O Que é a Descola?,
-      href: https://descola.org/sobre
+      label: O Que é a Boileplate?,
+      href: /sobre
     }
   - link: {
       label: Para empresas,
-      href: https://descola.org/empresas
+      href: /empresas
     }
   - link: {
       label: Blog,

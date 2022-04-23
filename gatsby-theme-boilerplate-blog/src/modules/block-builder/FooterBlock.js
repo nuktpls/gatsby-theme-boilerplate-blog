@@ -151,8 +151,8 @@ const FooterBlock = ({ footerLogo, featurePosts }) => {
                           href={el.item.href}
                           role="menuitem"
                           itemProp="url"
-                          title="Cursos da Descola"
-                          aria-label={`Acesso a página: ${el.item.label}, no websítio da Descola`}
+                          title="Cursos da Boileplate"
+                          aria-label={`Acesso a página: ${el.item.label}, no websítio da Boileplate`}
                         >
                           {el.item.label}
                         </a>

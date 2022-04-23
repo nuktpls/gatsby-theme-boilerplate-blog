@@ -1,19 +1,19 @@
 footer_menu:
   - item: {
       label: Cursos,
-      href: https://descola.org/cursos
+      href: /cursos
     }
   - item: {
       label: Para empresas,
-      href: https://descola.org/empresas
+      href: /empresas
     }
   - item: {
       label: FAQ,
-      href: https://descola.org/faq
+      href: /faq
     }
   - item: {
       label: Termos de Uso,
-      href: https://descola.org/termos-de-uso
+      href: /termos-de-uso
     }
   - item: {
       label: Blog,
@@ -21,9 +21,9 @@ footer_menu:
     }
   - item: {
       label: Contato,
-      href: https://descola.org/contato
+      href: /contato
     }
   - item: {
       label: Imprensa,
-      href: https://descola.org/imprensa
+      href: /imprensa
     }

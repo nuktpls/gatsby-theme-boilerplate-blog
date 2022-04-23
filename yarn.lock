@@ -8369,6 +8369,20 @@ gatsby-layout-builder-a11y@^0.1.3:
     sass "^1.49.11"
     web-vitals "^2.1.4"
 
+gatsby-layout-builder-cursor@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-layout-builder-cursor/-/gatsby-layout-builder-cursor-0.1.0.tgz#526e3bbbd7c7484d9e1a0fc3b6b133c47d038ab9"
+  integrity sha512-kVzR8PnS4e6h+UuiQvicCgHPaq4clh7nN9oYTry7q7USDgaM7fjB4gWF6CRnMd6FKDv/JHkSLKlIpPcgSYZ2Tg==
+  dependencies:
+    gatsby "^4.12.0"
+    gatsby-plugin-image "^2.11.1"
+    gatsby-plugin-sass "^5.11.1"
+    prop-types "^15.8.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    sass "^1.49.11"
+    web-vitals "^2.1.4"
+
 gatsby-layout-builder-seo@^0.4.81:
   version "0.4.81"
   resolved "https://registry.yarnpkg.com/gatsby-layout-builder-seo/-/gatsby-layout-builder-seo-0.4.81.tgz#68bde3b55efe44d6420762b075d1b5801e53f1a7"

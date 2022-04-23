@@ -1,16 +1,16 @@
 layout01:
   type: BODY
-  titleSeo: Descola
+  titleSeo: Boileplate
   post_per_page: 9
 layout02:
   type: HEADER
   is_boxed: true
   background: #fff
   logo: svg
-  logo_url: https://descola.org/
+  logo_url: /
   main_menu: true
   search_widget: true
-  link_01: https://descola.org/#login
+  link_01: /#login
 layout03:
   type: MAIN
   is_boxed: true
@@ -26,8 +26,8 @@ layout04:
       about_heading: Sobre a escola
       about_widget: true
       about_p:
-        - p: A Descola é uma escola de cursos online que cria grandes experiências de aprendizagem para transformar as pessoas ao longo de suas vidas. Selecionamos temas e professores e construímos conteúdos para que você desenvolva Power Skills.
-        - p: Descola Cursos Inovadores LTDA EPP 17.996.625/0001-58
+        - p: A Boileplate é uma escola de cursos online que cria grandes experiências de aprendizagem para transformar as pessoas ao longo de suas vidas. Selecionamos temas e professores e construímos conteúdos para que você desenvolva Power Skills.
+        - p: Boileplate Cursos Inovadores LTDA EPP 17.996.625/0001-58
       about_phone: (11) 3042-0043
       about_phone_prefix: "+55"
       logo_widget: true

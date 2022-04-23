@@ -50,7 +50,7 @@ const SinglePostBlock = ({
                 type="BLOCK_IMAGE"
                 opt={{
                   queryCard: authorImg,
-                  alt: 'Descola Holder',
+                  alt: 'Boileplate Holder',
                   classes: 'author-img',
                 }}
               />

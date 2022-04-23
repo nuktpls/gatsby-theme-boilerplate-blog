@@ -12,14 +12,14 @@
     "habilidades",
     "escola online"
   ],
-  "description": "A Descola é uma escola de cursos online com foco nas power skills. Junte-se aos mais de 100.000 alunos que já transformaram suas vidas com novas habilidades!",
+  "description": "A Boileplate é uma escola de cursos online com foco nas power skills. Junte-se aos mais de 100.000 alunos que já transformaram suas vidas com novas habilidades!",
   "author": {
     "name": "Milton Bolonha",
     "email": "miltonbolonha@gmail.com"
   },
   "organization": {
-    "name": "Descola",
-    "url": "https://descola.org/",
+    "name": "Boileplate",
+    "url": "https://boilerplate-blog.netlify.app/",
     "email": "descola@descola.com.br",
     "logo": "boilerplate-banner.png",
     "cardImage": "boilerplate-banner.png",
@@ -27,19 +27,19 @@
   },
   "repository": "https://github.com/nuktpls/gatsby-theme-boilerplate-blog",
   "urlPrefix": "/",
-  "appName": "Blog - Descola",
+  "appName": "Blog - Boileplate",
   "appLogic": "Blog",
   "dateCreated": "05 de março de 2022",
   "siteUrl": "https://boilerplate-blog.netlify.app/",
-  "searchBaseUrl": "https://descola.org/cursos?search=",
-  "clientOrg": "Descola",
-  "clientShortName": "Descola",
+  "searchBaseUrl": "https://boilerplate-blog.netlify.app/cursos?search=",
+  "clientOrg": "Boileplate",
+  "clientShortName": "Boileplate",
   "clientSocial": {
     "instagram": "https://www.instagram.com/descolagram/",
     "facebook": "https://www.facebook.com/descolasp/",
     "linkedIn": "https://br.linkedin.com/school/descola",
-    "youtube": "https://www.youtube.com/c/DescolaOrg",
-    "twitter": "Descola_"
+    "youtube": "https://www.youtube.com/c/BoileplateOrg",
+    "twitter": "Boileplate_"
   },
   "themeColor": "#fc4303",
   "backgroundColor": "#fff",
@@ -81,6 +81,7 @@
     "@mdx-js/react": "^1.6.22",
     "gatsby-layout-builder": "^0.7.80",
     "gatsby-layout-builder-a11y": "^0.1.3",
+    "gatsby-layout-builder-cursor": "^0.1.0",
     "gatsby-layout-builder-seo": "^0.4.81",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-anchor-links": "^1.2.1",

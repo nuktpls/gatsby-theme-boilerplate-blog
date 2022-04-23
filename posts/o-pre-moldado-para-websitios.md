@@ -15,6 +15,6 @@ O Instituto Organizacionista, sob o selo de sua iniciativa educacional **Edu4Dev
 
 ### **1. Blog em GatsbyJS e Netlify CMS**
 
-É um desafio muito grande migrar de plataforma administradora de Blog? A resposta está no trabalho feito para a Organização Descola.
+É um desafio muito grande migrar de plataforma administradora de Blog? A resposta está no trabalho feito para a Organização Boileplate.
 
 Com mais de uma centena de postagens, o desafio é colocar um novo blog no ar que seja desenhado para rodar no servidor Netlify (leia-se `Nétilifí`).

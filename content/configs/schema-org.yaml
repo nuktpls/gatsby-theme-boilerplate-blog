@@ -1,10 +1,10 @@
 schema:
   - card:
-      appName: Blog - Descola
+      appName: Blog - Boileplate
       version: "1.0.0"
-      brandDescription: A Descola é uma escola de cursos online que cria grandes experiências de aprendizagem para transformar as pessoas ao longo de suas vidas. Selecionamos temas e professores e construímos conteúdos para que você desenvolva Power Skills.
-      brandurl: https://descola.org/
-      brandName: Descola
+      brandDescription: A Boileplate é uma escola de cursos online que cria grandes experiências de aprendizagem para transformar as pessoas ao longo de suas vidas. Selecionamos temas e professores e construímos conteúdos para que você desenvolva Power Skills.
+      brandurl: /
+      brandName: Boileplate
       keywords:
         - key: descola
         - key: cursos
@@ -17,7 +17,7 @@ schema:
         facebook: https://www.facebook.com/descolasp/
         instagram: https://www.instagram.com/descolagram/
         linkedIn: https://br.linkedin.com/school/descola
-        youtube: https://www.youtube.com/c/DescolaOrg
+        youtube: https://www.youtube.com/c/BoileplateOrg
       alternateName: a
       potentialAction: Learning
       telephone: "+551130420043"

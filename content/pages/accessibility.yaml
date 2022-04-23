@@ -2,7 +2,7 @@ page:
   status: true
   name: Accessibility
   template: ONE_COLUMN
-  titleSeo: Descola
+  titleSeo: Boileplate
 configs:
   type: ROW
   heading: Accessibility

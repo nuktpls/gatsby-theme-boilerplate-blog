@@ -19,7 +19,7 @@ collections:
     folder: posts
     label_singular: Post
     description: >
-      Posts em MD do blog Descola.
+      Posts em MD do blog Boileplate.
     create: true
     slug: "{{slug}}"
     fields:

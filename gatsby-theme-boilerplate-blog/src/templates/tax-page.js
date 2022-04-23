@@ -1,14 +1,16 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
-import DescolaLogo from '@Images/boilerplate-blog-logo.svg'
-import DescolaLogoDark from '@Images/boilerplate-squared.svg'
+import BoileplateLogo from '@Images/boilerplate-blog-logo.svg'
+import BoileplateLogoDark from '@Images/boilerplate-squared.svg'
 
 import Layout from 'gatsby-layout-builder'
 import BodyBlock from '@BlockBuilder/BodyBlock'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import HeaderBlock from '@BlockBuilder/HeaderBlock'
 import FooterBlock from '@BlockBuilder/FooterBlock'
+import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
+
 import PostsBlock from '@BlockBuilder/PostsBlock'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 
@@ -33,10 +35,10 @@ const TagListPage = props => {
                   featuredImage {
                     childrenImageSharp {
                       gatsbyImageData(
-                        width: 350
-                        height: 224
+                        width: 400
+                        height: 200
                         placeholder: DOMINANT_COLOR
-                        quality: 90
+                        quality: 100
                       )
                     }
                   }
@@ -49,7 +51,15 @@ const TagListPage = props => {
       `}
       render={data => {
         const tagList = data.allMarkdownRemark.edges
-        const { cardImage, footerThreeMarkdowRemark, site } = useSiteMetadatas()
+        const {
+          cardImage,
+          footerThreeMarkdowRemark,
+          site,
+          githubImg,
+          instaImg,
+          twitterImg,
+          whatsImg,
+        } = useSiteMetadatas()
 
         const tagContext = props.pageContext.tag
         const tagListFiltered = tagList.filter(item => {
@@ -57,13 +67,13 @@ const TagListPage = props => {
         })
         return (
           <BodyBlock opt={{ classes: 'blog-list' }}>
-            <HeaderBlock logotipoSvg={<DescolaLogo />} />
+            <HeaderBlock logotipoSvg={<BoileplateLogo />} />
             <Layout
               type="ROW"
               opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
             >
               <main className="main-container" role="list">
-                <HeadingBlock importance={10}>
+                <HeadingBlock importance={9} width={350}>
                   Posts da Tag: {props.pageContext.tag}
                 </HeadingBlock>
                 <PostsBlock
@@ -78,9 +88,15 @@ const TagListPage = props => {
               </main>
             </Layout>
             {/* <FooterBlock
-              footerLogo={<DescolaLogoDark />}
+              footerLogo={<BoileplateLogoDark />}
               featurePosts={footerThreeMarkdowRemark.edges}
             /> */}
+            <NewFooterBlock
+              githubImg={githubImg}
+              instaImg={instaImg}
+              twitterImg={twitterImg}
+              whatsImg={whatsImg}
+            />
           </BodyBlock>
         )
       }}

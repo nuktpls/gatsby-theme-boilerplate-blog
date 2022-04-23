@@ -10,6 +10,7 @@ import BoilerplateLogoDark from '@Images/boilerplate-squared.svg'
 import BodyBlock from '@BlockBuilder/BodyBlock'
 import HeaderBlock from '@BlockBuilder/HeaderBlock'
 import FooterBlock from '@BlockBuilder/FooterBlock'
+import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
 import PostsBlock from '@BlockBuilder/PostsBlock'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import AccessibilityBlock from '@BlockBuilder/AccessibilityBlock'
@@ -63,45 +64,14 @@ const IndexPage = props => {
   // instaImg,
   // twitterImg
   // whatsImg
-  console.log(githubImg)
+
   return (
     <BodyBlock opt={{ classes: 'blog-list' }}>
       <SeoContainer
         opt={{
-          // titleSeo: `Descola`,
-          // classes: 'blog-list',
-          // keywords: keywords,
-          // social: {
-          //   fbAppID: '0',
-          // },
-          // datePublished: dateCreated,
-          // schemaType: 'Blog',
-          // description: description,
-          // authorSeo: author,
-          // organization: {
-          //   name: 'Organization',
-          // },
-          // brandPhone: organization.phone,
-          // brandEmail: organization.email,
-          // businessName: organization.name,
-          // dateCreated: dateCreated,
-          // themeColor: themeColor,
-          // blogListing: posts.slice(0, 9),
-          // mainLogo: imgHolder,
-          // cardImage: cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null,
-          // serverUrl: siteUrl,
-          // sameAs: {
-          //   instagram: 'https://www.instagram.com/descola_',
-          //   facebook: 'https://www.facebook.com/descola_',
-          //   linkedIn: 'https://www.linkedin.com/company/descola_',
-          //   youtube: 'asd',
-          // },
           schemaType: 'Blog',
           startedWebsiteDate: dateCreated,
-          // modifiedWebsiteDate: modifiedWebsiteDate,
-          // createdPageDate: createdPageDate,
-          // modifiedPageDate: modifiedPageDate,
-          pageTitle: `Descola`,
+          pageTitle: `Boileplate`,
           pageDescription: description,
           authorWebsiteData: organization.url,
           authorPostData: organization.name,
@@ -185,97 +155,12 @@ const IndexPage = props => {
           />
         </main>
       </Layout>
-      <Layout type={'ROW'} opt={{ isBoxed: true }}>
-        <HeadingBlock importance={9} width={400}>
-          Social
-        </HeadingBlock>
-
-        <Layout
-          type={'ROW'}
-          opt={{
-            isBoxed: true,
-            alignTo: 'center',
-            classes: 'social-icons',
-            numColumns: 4,
-          }}
-        >
-          <div className="social-icon-wrapper">
-            {/* <FiInstagram /> */}
-            {/* githubImg */}
-            <Layout
-              type="BLOCK_IMAGE"
-              opt={{
-                queryCard: githubImg,
-                hasLink: true,
-                link: 'linkUrl',
-                staticImage: true,
-                publicImageUrl: githubImg,
-                alt: title,
-                placeholder: 'NONE',
-                classes: 'colorME roundME bottom-social',
-              }}
-            />
-          </div>
-          <div className="social-icon-wrapper">
-            {/* <FiFacebook /> */}
-            <Layout
-              type="BLOCK_IMAGE"
-              opt={{
-                queryCard: instaImg,
-                hasLink: true,
-                link: 'linkUrl',
-                staticImage: true,
-                publicImageUrl: instaImg,
-                alt: title,
-                placeholder: 'NONE',
-                classes: 'colorME roundME bottom-social',
-              }}
-            />
-          </div>
-          <div className="social-icon-wrapper">
-            {/* <FiTwitter /> */}
-            <Layout
-              type="BLOCK_IMAGE"
-              opt={{
-                queryCard: twitterImg,
-                hasLink: true,
-                link: 'linkUrl',
-                staticImage: true,
-                publicImageUrl: twitterImg,
-                alt: title,
-                placeholder: 'NONE',
-                classes: 'colorME roundME bottom-social',
-              }}
-            />
-          </div>
-          <div className="social-icon-wrapper">
-            {/* <FiGithub /> */}
-            <Layout
-              type="BLOCK_IMAGE"
-              opt={{
-                queryCard: whatsImg,
-                hasLink: true,
-                link: 'linkUrl',
-                staticImage: true,
-                publicImageUrl: whatsImg,
-                alt: title,
-                placeholder: 'NONE',
-                classes: 'colorME roundME bottom-social',
-              }}
-            />
-          </div>
-        </Layout>
-        <Layout
-          type={'ROW'}
-          opt={{ isBoxed: true, classes: 'logo-bottom-wrapper' }}
-        >
-          <BoilerplateLogo className="m0auto logo-bottom" />
-          <p className="m0auto bottom-paragraph">
-            © 2022 BOILERPLATE TIMES - TODOS OS DIREITOS RESERVADOS
-          </p>
-        </Layout>
-        <hr />
-      </Layout>
+      <NewFooterBlock
+        githubImg={githubImg}
+        instaImg={instaImg}
+        twitterImg={twitterImg}
+        whatsImg={whatsImg}
+      />
       {/* <FooterBlock
         footerLogo={<BoilerplateLogoDark />}
         featurePosts={footerThreeMarkdowRemark.edges}

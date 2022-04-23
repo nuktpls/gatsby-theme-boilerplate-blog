@@ -4,13 +4,13 @@ menu:
   items:
     - item:
         label: Cursos
-        href: https://descola.org/cursos
+        href: /cursos
     - item:
-        label: O Que é a Descola?
-        href: https://descola.org/sobre
+        label: O Que é a Boileplate?
+        href: /sobre
     - item:
         label: Para empresas
-        href: https://descola.org/empresas
+        href: /empresas
     - item:
         label: Blog
         to: /
@@ -19,4 +19,4 @@ menu:
     - item:
         search_widget: true
         search_label: Procure um curso
-        search_url_prefix: https://descola.org/cursos?search=
+        search_url_prefix: /cursos?search=
