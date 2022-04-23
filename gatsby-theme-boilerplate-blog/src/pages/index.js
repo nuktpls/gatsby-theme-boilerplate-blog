@@ -135,15 +135,15 @@ const IndexPage = props => {
           }}
         />
       </Layout>
-      <Layout
-        type="ROW"
-        opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
-      >
-        <main className="main-container" id="site-content" role="list">
-          <HeadingBlock classes="m50auto hack" importance={9} width={400}>
-            Featured Posts
-          </HeadingBlock>
 
+      <main className="main-container" id="site-content" role="list">
+        <HeadingBlock classes="m50auto hack" importance={9} width={400}>
+          Featured Posts
+        </HeadingBlock>
+        <Layout
+          type="ROW"
+          opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
+        >
           <PostsBlock
             postsPerPage={site.siteMetadata.postsPerPage}
             postList={featuredPosts}
@@ -155,10 +155,14 @@ const IndexPage = props => {
             }}
             classes="colorME"
           />
-          <HeadingBlock classes="m50auto" importance={9} width={400}>
-            Posts
-          </HeadingBlock>
-
+        </Layout>
+        <HeadingBlock classes="m50auto" importance={9} width={400}>
+          Posts
+        </HeadingBlock>
+        <Layout
+          type="ROW"
+          opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
+        >
           <PostsBlock
             postsPerPage={site.siteMetadata.postsPerPage}
             postList={posts}
@@ -170,8 +174,8 @@ const IndexPage = props => {
             }}
             classes="colorME"
           />
-        </main>
-      </Layout>
+        </Layout>
+      </main>
       <NewFooterBlock
         githubImg={githubImg}
         instaImg={instaImg}

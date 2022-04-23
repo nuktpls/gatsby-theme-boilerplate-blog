@@ -1,21 +1,7 @@
 - **`[v.0.6.x:next]`**: More Layout types.
 - **`[v.0.x.0:warning]`**: The first grand finale release will be publish at v1.0.0.
 
-![Theme workflow](https://github.com/nuktpls/gatsby-theme-boilerplate-blog/actions/workflows/master.yaml/badge.svg)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/18254200-644c-4919-a835-b51efd328337/deploy-status)](https://app.netlify.com/sites/boilerplate-blog/deploys)
-
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
-
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
-
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
-
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
-
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
+![Theme workflow](https://github.com/nuktpls/gatsby-theme-boilerplate-blog/actions/workflows/master.yaml/badge.svg) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog) [![Netlify Status](https://api.netlify.com/api/v1/badges/18254200-644c-4919-a835-b51efd328337/deploy-status)](https://app.netlify.com/sites/boilerplate-blog/deploys) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-boilerplate-blog&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-boilerplate-blog)
 
 ---
 
