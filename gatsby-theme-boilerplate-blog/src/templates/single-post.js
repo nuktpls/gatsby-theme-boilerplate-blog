@@ -44,7 +44,7 @@ const SinglePost = ({ data, location }) => {
   return (
     <MainTemplateWrapper
       classes="single-post"
-      opt={{
+      seoSchema={{
         schemaType: 'article',
         startedWebsiteDate: dateCreated,
         createdPageDate: post.frontmatter.date,

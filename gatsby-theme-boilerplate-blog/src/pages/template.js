@@ -1,30 +1,12 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import { getSrc } from 'gatsby-plugin-image'
-
 import Layout from 'gatsby-layout-builder'
-import SeoContainer from 'gatsby-layout-builder-seo'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
-import BoilerplateLogo from '@Images/boilerplate-blog-logo.svg'
-
-import BodyBlock from '@BlockBuilder/BodyBlock'
-import HeaderBlock from '@BlockBuilder/HeaderBlock'
-
-import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
-
+import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 
 const TemplatePage = () => {
-  const {
-    cardImage,
-    imgHolder,
-    site,
-    githubImg,
-    instaImg,
-    twitterImg,
-    whatsImg,
-    bannerContent,
-  } = useSiteMetadatas()
+  const { cardImage, imgHolder, site } = useSiteMetadatas()
   const {
     description,
     keywords,
