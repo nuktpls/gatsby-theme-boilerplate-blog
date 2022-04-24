@@ -1,5 +1,4 @@
 import React from 'react'
-import { getSrc } from 'gatsby-plugin-image'
 
 import SeoContainer from 'gatsby-layout-builder-seo'
 import { useSiteMetadatas } from '../../tools/useSiteMetadatas'
@@ -11,24 +10,8 @@ import HeaderBlock from '@BlockBuilder/HeaderBlock'
 import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
 
 const MainTemplateWrapper = ({ children, seoSchema, classes }) => {
-  const {
-    cardImage,
-    imgHolder,
-    site,
-    githubImg,
-    instaImg,
-    twitterImg,
-    whatsImg,
-  } = useSiteMetadatas()
-  const {
-    description,
-    keywords,
-    siteUrl,
-    dateCreated,
-    organization,
-    themeColor,
-  } = site.siteMetadata
-  const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
+  const { githubImg, instaImg, twitterImg, whatsImg } = useSiteMetadatas()
+
   return (
     <BodyBlock opt={{ classes: classes }}>
       <SeoContainer opt={seoSchema} />
