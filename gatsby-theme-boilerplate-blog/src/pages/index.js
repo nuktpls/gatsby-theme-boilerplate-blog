@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { getSrc } from 'gatsby-plugin-image'
 
 import Layout from 'gatsby-layout-builder'
 
@@ -10,57 +9,25 @@ import HeadingBlock from '@BlockBuilder/HeadingBlock'
 
 import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
 
+import { defaultSchema } from '../configs/schemas'
+
 const IndexPage = props => {
-  const { cardImage, imgHolder, site, bannerContent } = useSiteMetadatas()
+  const { site, bannerContent } = useSiteMetadatas()
   const { data } = props
   const posts = data.allMarkdownRemark.edges
-
-  const {
-    description,
-    keywords,
-    siteUrl,
-    dateCreated,
-    organization,
-    themeColor,
-  } = site.siteMetadata
-  const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
 
   const findItem = postsList => {
     let x = []
     postsList.map(e => {
-      e.node.frontmatter.featuredPost === true ? x.push(e) : null
+      if (e.node.frontmatter.featuredPost === true) {
+        x.push(e)
+      }
     })
     return x
   }
   const featuredPosts = findItem(posts)
   return (
-    <MainTemplateWrapper
-      seoSchema={{
-        schemaType: 'Blog',
-        startedWebsiteDate: dateCreated,
-        pageTitle: `Boileplate`,
-        pageDescription: description,
-        authorWebsiteData: organization.url,
-        authorPostData: organization.name,
-        highlightImage: cardImg,
-        brandMainLogo: imgHolder,
-        brandCardLogo: imgHolder,
-        brandPhone: organization.phone,
-        brandEmail: organization.email,
-        brandName: organization.name,
-        brandSocialArr: {
-          instagram: 'https://www.instagram.com/descola_',
-          facebook: 'https://www.facebook.com/descola_',
-          linkedIn: 'https://www.linkedin.com/company/descola_',
-          youtube: 'asd',
-        },
-        buildServerUrl: siteUrl,
-        websiteLanguage: 'pt-BR',
-        brandThemeColor: themeColor,
-        brandKeywords: keywords,
-        brandWebsiteUrl: siteUrl,
-      }}
-    >
+    <MainTemplateWrapper seoSchema={defaultSchema}>
       <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
         <Layout
           type="BLOCK_IMAGE"

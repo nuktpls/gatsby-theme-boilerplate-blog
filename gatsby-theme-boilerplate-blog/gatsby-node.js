@@ -99,7 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
         path: `/tags/${_.kebabCase(tag.fieldValue)}`,
         component: path.resolve(
           rootDir,
-          'gatsby-theme-boilerplate-blog/src/templates/tax-page.js'
+          'gatsby-theme-boilerplate-blog/src/templates/tag-list-page.js'
         ),
         context: {
           tag: tag.fieldValue,
