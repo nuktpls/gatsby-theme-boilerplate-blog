@@ -1,6 +1,6 @@
 [build]
     command = "GATSBY_CONCURRENT_DOWNLOAD=25 yarn workspace engine build"
-    publish = "public"
+    publish = "engine/public"
 
 [build.environment]
   NODE_VERSION = "16.14.2"

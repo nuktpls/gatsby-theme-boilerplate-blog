@@ -35,51 +35,33 @@ const TemplatePage = () => {
   } = site.siteMetadata
   const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
   return (
-    <BodyBlock opt={{ classes: 'blog-list' }}>
-      <SeoContainer
-        opt={{
-          schemaType: 'Blog',
-          startedWebsiteDate: dateCreated,
-          pageTitle: `Boileplate`,
-          pageDescription: description,
-          authorWebsiteData: organization.url,
-          authorPostData: organization.name,
-          highlightImage: cardImg,
-          brandMainLogo: imgHolder,
-          brandCardLogo: imgHolder,
-          brandPhone: organization.phone,
-          brandEmail: organization.email,
-          brandName: organization.name,
-          brandSocialArr: {
-            instagram: 'https://www.instagram.com/descola_',
-            facebook: 'https://www.facebook.com/descola_',
-            linkedIn: 'https://www.linkedin.com/company/descola_',
-            youtube: 'asd',
-          },
-          buildServerUrl: siteUrl,
-          websiteLanguage: 'pt-BR',
-          brandThemeColor: themeColor,
-          brandKeywords: keywords,
-          brandWebsiteUrl: siteUrl,
-        }}
-      />
-
-      <HeaderBlock logotipoSvg={<BoilerplateLogo />} />
-      <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
-        <Layout
-          type="BLOCK_IMAGE"
-          opt={{
-            queryCard: bannerContent,
-            hasLink: true,
-            link: 'linkUrl',
-            staticImage: true,
-            publicImageUrl: bannerContent,
-            alt: 'title',
-            placeholder: 'NONE',
-            classes: '',
-          }}
-        />
-      </Layout>
+    <MainTemplateWrapper
+      seoSchema={{
+        schemaType: 'Blog',
+        startedWebsiteDate: dateCreated,
+        pageTitle: `Boileplate`,
+        pageDescription: description,
+        authorWebsiteData: organization.url,
+        authorPostData: organization.name,
+        highlightImage: cardImg,
+        brandMainLogo: imgHolder,
+        brandCardLogo: imgHolder,
+        brandPhone: organization.phone,
+        brandEmail: organization.email,
+        brandName: organization.name,
+        brandSocialArr: {
+          instagram: 'https://www.instagram.com/descola_',
+          facebook: 'https://www.facebook.com/descola_',
+          linkedIn: 'https://www.linkedin.com/company/descola_',
+          youtube: 'asd',
+        },
+        buildServerUrl: siteUrl,
+        websiteLanguage: 'pt-BR',
+        brandThemeColor: themeColor,
+        brandKeywords: keywords,
+        brandWebsiteUrl: siteUrl,
+      }}
+    >
       <Layout
         type="ROW"
         opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
@@ -90,17 +72,7 @@ const TemplatePage = () => {
           </HeadingBlock>
         </main>
       </Layout>
-      <NewFooterBlock
-        githubImg={githubImg}
-        instaImg={instaImg}
-        twitterImg={twitterImg}
-        whatsImg={whatsImg}
-      />
-      {/* <FooterBlock
-        footerLogo={<BoilerplateLogoDark />}
-        featurePosts={footerThreeMarkdowRemark.edges}
-      /> */}
-    </BodyBlock>
+    </MainTemplateWrapper>
   )
 }
 

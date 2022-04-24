@@ -10,7 +10,7 @@ import HeaderBlock from '@BlockBuilder/HeaderBlock'
 
 import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
 
-const MainTemplateWrapper = ({ children }) => {
+const MainTemplateWrapper = ({ children, seoSchema }) => {
   const {
     cardImage,
     imgHolder,
@@ -31,33 +31,7 @@ const MainTemplateWrapper = ({ children }) => {
   const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
   return (
     <BodyBlock opt={{ classes: 'blog-list' }}>
-      <SeoContainer
-        opt={{
-          schemaType: 'Blog',
-          startedWebsiteDate: dateCreated,
-          pageTitle: `Boileplate`,
-          pageDescription: description,
-          authorWebsiteData: organization.url,
-          authorPostData: organization.name,
-          highlightImage: cardImg,
-          brandMainLogo: imgHolder,
-          brandCardLogo: imgHolder,
-          brandPhone: organization.phone,
-          brandEmail: organization.email,
-          brandName: organization.name,
-          brandSocialArr: {
-            instagram: 'https://www.instagram.com/descola_',
-            facebook: 'https://www.facebook.com/descola_',
-            linkedIn: 'https://www.linkedin.com/company/descola_',
-            youtube: 'asd',
-          },
-          buildServerUrl: siteUrl,
-          websiteLanguage: 'pt-BR',
-          brandThemeColor: themeColor,
-          brandKeywords: keywords,
-          brandWebsiteUrl: siteUrl,
-        }}
-      />
+      <SeoContainer opt={seoSchema} />
 
       <HeaderBlock logotipoSvg={<BoilerplateLogo />} />
       {children}
