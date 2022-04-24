@@ -10,7 +10,7 @@ import HeaderBlock from '@BlockBuilder/HeaderBlock'
 
 import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
 
-const MainTemplateWrapper = ({ children, seoSchema }) => {
+const MainTemplateWrapper = ({ children, seoSchema, classes }) => {
   const {
     cardImage,
     imgHolder,
@@ -30,7 +30,7 @@ const MainTemplateWrapper = ({ children, seoSchema }) => {
   } = site.siteMetadata
   const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
   return (
-    <BodyBlock opt={{ classes: 'blog-list' }}>
+    <BodyBlock opt={{ classes: classes }}>
       <SeoContainer opt={seoSchema} />
 
       <HeaderBlock logotipoSvg={<BoilerplateLogo />} />

@@ -11,9 +11,19 @@ import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
 
 const IndexPage = props => {
-  const { site, bannerContent } = useSiteMetadatas()
+  const { cardImage, imgHolder, site, bannerContent } = useSiteMetadatas()
   const { data } = props
   const posts = data.allMarkdownRemark.edges
+
+  const {
+    description,
+    keywords,
+    siteUrl,
+    dateCreated,
+    organization,
+    themeColor,
+  } = site.siteMetadata
+  const cardImg = cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null
 
   const findItem = postsList => {
     let x = []
