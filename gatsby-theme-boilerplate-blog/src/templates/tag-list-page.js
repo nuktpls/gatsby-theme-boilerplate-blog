@@ -56,7 +56,7 @@ const TagListPage = props => {
               opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
             >
               <main className="main-container" role="list">
-                <HeadingBlock importance={9} width={350}>
+                <HeadingBlock importance={10} width={350}>
                   Posts da Tag: {props.pageContext.tag}
                 </HeadingBlock>
                 <PostsBlock

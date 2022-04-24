@@ -5,7 +5,7 @@ import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 
-const TemplatePage = () => {
+const Template = () => {
   const { cardImage, imgHolder, site } = useSiteMetadatas()
   const {
     description,
@@ -58,4 +58,4 @@ const TemplatePage = () => {
   )
 }
 
-export default TemplatePage
+export default Template

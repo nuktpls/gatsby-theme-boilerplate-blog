@@ -30,6 +30,13 @@ const PostsBlock = ({
   const numCollections = Math.ceil(postList.length / postsPerPage)
   const nextCollection = currentFirstItem + postsPerPage
   const isLastClick = nextCollection >= postList.length
+  const btnLoadMore = isLastClick ? (
+    ' '
+  ) : (
+    <button onClick={e => handleBtnLoadMore(e)} value={currentFirstItem}>
+      {pagination.loadMore}
+    </button>
+  )
   const initialLoad = typeLoad === 'push' ? 0 : currentFirstItem
   const posts = postList.slice(initialLoad, nextCollection)
   return (
@@ -49,7 +56,6 @@ const PostsBlock = ({
                 node: {
                   frontmatter: { title, tags, featuredImage },
                   fields: { slug },
-                  excerpt,
                 },
               },
               i
@@ -59,7 +65,6 @@ const PostsBlock = ({
                   postImage={featuredImage}
                   linkUrl={slug}
                   title={title}
-                  // excerpt={excerpt}
                   readMoreText={readMoreText}
                   key={i}
                   tags={tags}
@@ -76,18 +81,7 @@ const PostsBlock = ({
           opt={{ numRows: 1, isBoxed: true, classes: 'pagination' }}
         >
           {pagination.loadMoreBtn === true ? (
-            <p className="btn-load-more">
-              {isLastClick ? (
-                ' '
-              ) : (
-                <button
-                  onClick={e => handleBtnLoadMore(e)}
-                  value={currentFirstItem}
-                >
-                  {pagination.loadMore}
-                </button>
-              )}
-            </p>
+            <p className="btn-load-more">{btnLoadMore}</p>
           ) : (
             <>
               <p>

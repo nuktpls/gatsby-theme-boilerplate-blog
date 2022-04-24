@@ -1,9 +1,6 @@
 import React from 'react'
 
 const HeadingBlock = ({ importance = 6, children, classes = '', width }) => {
-  let HeadingNow = text => (
-    <h1 className={`boilerplate-heading ${classes}`}>{text}</h1>
-  )
   const WrapperHR = props => {
     return (
       <div className="wrapper-hr">
@@ -45,10 +42,6 @@ const HeadingBlock = ({ importance = 6, children, classes = '', width }) => {
       case 9:
         return (
           <h2 className={'boilerplate-heading ' + classes}>{props.children}</h2>
-        )
-      case 10:
-        return (
-          <h1 className={'boilerplate-heading ' + classes}>{props.children}</h1>
         )
       default:
         return (
