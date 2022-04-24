@@ -40,10 +40,11 @@ $s__space: 16pt;
 $heading__top-padding: 0;
 
 // typograph
-$main__font: 'Bona Nova', Arial, sans-serif;
-$second__font: 'Noto Serif', Arial, sans-serif;
-$third__font: 'Josefin Sans', Arial, sans-serif;
 $alternative__font: 'Arial';
+$main__font: 'Bona Nova', $alternative__font, sans-serif;
+$second__font: 'Noto Serif', $alternative__font, sans-serif;
+$third__font: 'Josefin Sans', $alternative__font, sans-serif;
+$fourth__font: 'Open Sans', $alternative__font, sans-serif;
 
 $m__fontSize: 17px;
 $h1__fontSize: 30pt;

@@ -5,27 +5,27 @@
 
 ---
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nuktpls/gatsby-theme-boilerplate-blog)
+<!-- [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nuktpls/gatsby-theme-boilerplate-blog) -->
 
 ---
 
-# NÜktpls: Boilerplate Blog
+# Boilerplate Blog
 
-#### LAYOUT BUILDER _by [Edu4Dev](https://edu4.dev)_
+#### Boilerplate Blog _by [Edu4Dev](https://edu4.dev)_
 
-**Engine Agent:** Gatsby - Javascript Framework
+**Engine Agent:** GatsbyJS/ReactJS - Javascript Framework
 
 **Engine SubAgent:** Gatsby Theme
 
-**Gatsby Plugin Name:** NÜktpls: Boilerplate Blog
+**Gatsby Theme Name:** Boilerplate Blog
 
 **Author:** Edu4Dev - Milton Bolonha
 
-**Description:** NÜktpls: Boilerplate Blog is the platform
-web creators choose to build professional GatsbyJS HTML,
-plus SCSS basic structure, such as rows, number of columns,
-background color, header, responsive main menu,
-modals and simple stuffs.
+**Description:** Boilerplate Blog is a template for creating
+a [blog like the one here](htts//boilerplate-blog.netlify.app).
+
+It's also a platform web creators choose to build professional
+GatsbyJS HTML customized structures.
 
 \*_Keep in mind these bundle aren't a block builder._
 

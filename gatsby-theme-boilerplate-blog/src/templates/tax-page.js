@@ -2,7 +2,6 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
 import BoileplateLogo from '@Images/boilerplate-blog-logo.svg'
-import BoileplateLogoDark from '@Images/boilerplate-squared.svg'
 
 import Layout from 'gatsby-layout-builder'
 import BodyBlock from '@BlockBuilder/BodyBlock'
@@ -52,8 +51,6 @@ const TagListPage = props => {
       render={data => {
         const tagList = data.allMarkdownRemark.edges
         const {
-          cardImage,
-          footerThreeMarkdowRemark,
           site,
           githubImg,
           instaImg,

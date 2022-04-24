@@ -100,6 +100,7 @@ module.exports = {
           businessInfos.importFont.font01,
           businessInfos.importFont.font02,
           businessInfos.importFont.font03,
+          businessInfos.importFont.font04,
         ],
         display: 'swap',
       },
