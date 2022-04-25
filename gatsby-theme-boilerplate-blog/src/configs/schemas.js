@@ -40,7 +40,7 @@ const defaultSchema = () => {
   }
 }
 
-const articleSchema = data => {
+const articleSchema = (data, location) => {
   const { cardImage, imgHolder, site } = useSiteMetadatas()
   const post = data.markdownRemark
   const {

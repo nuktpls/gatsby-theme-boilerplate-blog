@@ -7,11 +7,14 @@ import SinglePostBlock from '@BlockBuilder/SinglePostBlock'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 import { articleSchema } from '../configs/schemas'
 
-const SinglePost = ({ data }) => {
+const SinglePost = ({ data, location }) => {
   const { imgHolder } = useSiteMetadatas()
   const post = data.markdownRemark
   return (
-    <MainTemplateWrapper classes="single-post" seoSchema={articleSchema(data)}>
+    <MainTemplateWrapper
+      classes="single-post"
+      seoSchema={articleSchema(data, location)}
+    >
       <main>
         <SinglePostBlock
           highlightImage={post?.frontmatter?.featuredImage}
