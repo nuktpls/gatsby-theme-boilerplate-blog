@@ -1,7 +1,7 @@
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 import { getSrc } from 'gatsby-plugin-image'
 
-const defaultSchema = () => {
+const defaultSchema = location => {
   const { cardImage, imgHolder, site } = useSiteMetadatas()
 
   const {
@@ -37,6 +37,7 @@ const defaultSchema = () => {
     brandThemeColor: themeColor,
     brandKeywords: keywords,
     brandWebsiteUrl: siteUrl,
+    actualPage: siteUrl + location.pathname || '/',
   }
 }
 

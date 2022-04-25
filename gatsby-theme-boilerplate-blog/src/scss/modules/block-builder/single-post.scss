@@ -15,7 +15,7 @@
 		background-color: #111e24;
 		min-height: 270px;
 		width: 100%;
-		max-width: 1020px;
+		max-width: $page__size;
 		margin: 0 auto;
 		.post.boxed-column{
 		padding: 0 10px;
@@ -43,7 +43,7 @@
 
 }
 .boxed-column.main-post{
-	max-width: 1020px;
+	max-width: $page__size;
 	margin: 0 auto;
 }
 }
@@ -94,6 +94,8 @@
 		line-height:28px;
 		font-weight: 300;
 		color: $paragrahp_black__color;
+		max-width: $paragraph__size;
+		margin: 0 auto;
 		p{
 		font-family: $fourth__font;
 		font-weight: 100;

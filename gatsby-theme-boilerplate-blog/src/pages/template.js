@@ -4,9 +4,9 @@ import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import { defaultSchema } from '../configs/schemas'
 
-const Template = () => {
+const Template = ({ location }) => {
   return (
-    <MainTemplateWrapper seoSchema={defaultSchema()}>
+    <MainTemplateWrapper seoSchema={defaultSchema(location)}>
       <main className="main-container" id="site-content" role="list">
         <HeadingBlock classes="m50auto" importance={9} width={400}>
           Template

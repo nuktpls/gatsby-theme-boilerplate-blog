@@ -50,7 +50,10 @@ const CategoryListPage = props => {
           return item.node.frontmatter.categories.includes(categoriesContext)
         })
         return (
-          <MainTemplateWrapper classes="blog-list" seoSchema={defaultSchema()}>
+          <MainTemplateWrapper
+            classes="blog-list"
+            seoSchema={defaultSchema(props.location)}
+          >
             <main className="main-container" role="list">
               <HeadingBlock importance={10} width={350}>
                 Posts da Categoria: {props.pageContext.categories}

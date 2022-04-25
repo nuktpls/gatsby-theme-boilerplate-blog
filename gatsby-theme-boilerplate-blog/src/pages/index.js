@@ -27,7 +27,7 @@ const IndexPage = props => {
   }
   const featuredPosts = findItem(posts)
   return (
-    <MainTemplateWrapper seoSchema={defaultSchema()}>
+    <MainTemplateWrapper seoSchema={defaultSchema(props.location)}>
       <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
         <Layout
           type="BLOCK_IMAGE"
