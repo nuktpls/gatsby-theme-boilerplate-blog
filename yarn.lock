@@ -8383,10 +8383,10 @@ gatsby-layout-builder-cursor@^0.1.0:
     sass "^1.49.11"
     web-vitals "^2.1.4"
 
-gatsby-layout-builder-seo@^0.4.81:
-  version "0.4.81"
-  resolved "https://registry.yarnpkg.com/gatsby-layout-builder-seo/-/gatsby-layout-builder-seo-0.4.81.tgz#68bde3b55efe44d6420762b075d1b5801e53f1a7"
-  integrity sha512-ZhsrkzPX087AuzPDfmoItHvj32myM8+g0ED0nM+LWc82WI6dBuDGv8Z7S3F2OkGMUUarmPNuSz+pj4eTiM0EVA==
+gatsby-layout-builder-seo@^0.4.82:
+  version "0.4.82"
+  resolved "https://registry.yarnpkg.com/gatsby-layout-builder-seo/-/gatsby-layout-builder-seo-0.4.82.tgz#27a33ac30b3ffae2b3bf325e7b2d216072a74113"
+  integrity sha512-q68LBiCmrTkHYZ9T0kxyRS1OV35IXxw5vlp9ALrvuBaPxzs0StQ5aK0A4S01FUerkK1twiwuW+BnIqYnQFv7YQ==
   dependencies:
     gatsby-plugin-image "^2.11.1"
     gatsby-plugin-sharp "4.11.1"

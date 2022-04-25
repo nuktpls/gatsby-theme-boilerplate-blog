@@ -5,13 +5,13 @@ import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
 
 import SinglePostBlock from '@BlockBuilder/SinglePostBlock'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
-import { defaultSchema } from '../configs/schemas'
+import { articleSchema } from '../configs/schemas'
 
 const SinglePost = ({ data }) => {
   const { imgHolder } = useSiteMetadatas()
   const post = data.markdownRemark
   return (
-    <MainTemplateWrapper classes="single-post" seoSchema={defaultSchema}>
+    <MainTemplateWrapper classes="single-post" seoSchema={articleSchema(data)}>
       <main>
         <SinglePostBlock
           highlightImage={post?.frontmatter?.featuredImage}
@@ -20,7 +20,7 @@ const SinglePost = ({ data }) => {
           author={post.frontmatter.author}
           html={post.html}
           title={post.frontmatter.title}
-          tags={post.frontmatter.tags}
+          categories={post.frontmatter.categories}
         />
       </main>
     </MainTemplateWrapper>
@@ -34,7 +34,7 @@ export const query = graphql`
         title
         date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
         author
-        tags
+        categories
         featuredPost
         featuredImage {
           childrenImageSharp {

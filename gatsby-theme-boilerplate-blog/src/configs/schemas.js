@@ -1,4 +1,5 @@
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
+import { getSrc } from 'gatsby-plugin-image'
 
 const defaultSchema = () => {
   const { cardImage, imgHolder, site } = useSiteMetadatas()
@@ -29,6 +30,7 @@ const defaultSchema = () => {
       facebook: 'https://www.facebook.com/descola_',
       linkedIn: 'https://www.linkedin.com/company/descola_',
       youtube: 'asd',
+      twitter: 'asd',
     },
     buildServerUrl: siteUrl,
     websiteLanguage: 'pt-BR',
@@ -38,4 +40,48 @@ const defaultSchema = () => {
   }
 }
 
-export { defaultSchema }
+const articleSchema = data => {
+  const { cardImage, imgHolder, site } = useSiteMetadatas()
+  const post = data.markdownRemark
+  const {
+    keywords,
+    dateCreated,
+    organization,
+    themeColor,
+    siteUrl,
+  } = site.siteMetadata
+  return {
+    schemaType: 'article',
+    startedWebsiteDate: dateCreated,
+    createdPageDate: post.frontmatter.date,
+    pageTitle: `${post.frontmatter.title} - Boileplate`,
+    pageDescription: post.excerpt,
+    authorWebsiteData: organization.url,
+    authorPostData: post.frontmatter.author,
+    highlightImage:
+      siteUrl +
+      post?.frontmatter?.featuredImage?.childrenImageSharp[0].gatsbyImageData
+        .images.fallback.src,
+    postBody: post.html,
+    brandMainLogo: siteUrl + getSrc(imgHolder?.childrenImageSharp[0]),
+    brandCardLogo: cardImage,
+    brandPhone: organization.phone,
+    brandEmail: organization.email,
+    brandName: organization.name,
+    brandSocialArr: {
+      instagram: 'https://www.instagram.com/descola_',
+      facebook: 'https://www.facebook.com/descola_',
+      linkedIn: 'https://www.linkedin.com/company/descola_',
+      youtube: 'asd',
+      twitter: 'asd',
+    },
+    buildServerUrl: siteUrl || '/',
+    websiteLanguage: 'pt-BR',
+    brandThemeColor: themeColor,
+    brandKeywords: keywords,
+    brandWebsiteUrl: siteUrl,
+    actualPage: siteUrl + location.pathname || '/',
+  }
+}
+
+export { defaultSchema, articleSchema }

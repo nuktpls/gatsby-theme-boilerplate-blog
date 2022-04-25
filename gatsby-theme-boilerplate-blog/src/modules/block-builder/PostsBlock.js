@@ -54,7 +54,7 @@ const PostsBlock = ({
             (
               {
                 node: {
-                  frontmatter: { title, tags, featuredImage },
+                  frontmatter: { title, categories, featuredImage },
                   fields: { slug },
                 },
               },
@@ -67,7 +67,7 @@ const PostsBlock = ({
                   title={title}
                   readMoreText={readMoreText}
                   key={i}
-                  tags={tags}
+                  categories={categories}
                   classes={classes}
                   mouseOverEvent={mouseOverEvent}
                   mouseOutEvent={mouseOutEvent}

@@ -10,7 +10,7 @@ const SinglePostBlock = ({
   date,
   author,
   html,
-  tags,
+  categories,
   title,
 }) => {
   return (
@@ -26,12 +26,12 @@ const SinglePostBlock = ({
         >
           <div className="header-post">
             <Layout type="ROW" opt={{ isBoxed: true, classes: 'post' }}>
-              <div className="post-tags-wrapper">
-                {tags.map((e, i) => {
+              <div className="post-categories-wrapper">
+                {categories.map((e, i) => {
                   return (
                     <Link
-                      to={`/tags/${_.kebabCase(e)}/`}
-                      className="post-tags"
+                      to={`/category/${_.kebabCase(e)}/`}
+                      className="post-categories"
                       key={i}
                     >
                       {e}

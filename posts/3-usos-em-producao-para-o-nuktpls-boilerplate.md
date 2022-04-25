@@ -2,7 +2,7 @@
 title: 3 usos em produção para o Nüktpls:Boilerplate
 date: 2021-12-17T12:33:38+00:00
 author: Equipe Edu4Dev
-tags:
+categories:
   - dicas
   - tagthree
 featuredPost: true

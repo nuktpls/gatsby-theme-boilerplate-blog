@@ -7,11 +7,11 @@ import PostsBlock from '@BlockBuilder/PostsBlock'
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 import { defaultSchema } from '../configs/schemas'
 
-const TagListPage = props => {
+const CategoryListPage = props => {
   return (
     <StaticQuery
       query={graphql`
-        query TagsList {
+        query CategoriesList {
           allMarkdownRemark(
             sort: { fields: frontmatter___date, order: DESC }
             limit: 900
@@ -24,7 +24,7 @@ const TagListPage = props => {
                 frontmatter {
                   date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
                   title
-                  tags
+                  categories
                   featuredImage {
                     childrenImageSharp {
                       gatsbyImageData(
@@ -43,24 +43,24 @@ const TagListPage = props => {
         }
       `}
       render={data => {
-        const tagList = data.allMarkdownRemark.edges
+        const categoriesList = data.allMarkdownRemark.edges
         const { site } = useSiteMetadatas()
-        const tagContext = props.pageContext.tag
-        const tagListFiltered = tagList.filter(item => {
-          return item.node.frontmatter.tags.includes(tagContext)
+        const categoriesContext = props.pageContext.categories
+        const categoriesListFiltered = categoriesList.filter(item => {
+          return item.node.frontmatter.categories.includes(categoriesContext)
         })
         return (
-          <MainTemplateWrapper classes="blog-list" seoSchema={defaultSchema}>
-            <Layout
-              type="ROW"
-              opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
-            >
-              <main className="main-container" role="list">
-                <HeadingBlock importance={10} width={350}>
-                  Posts da Tag: {props.pageContext.tag}
-                </HeadingBlock>
+          <MainTemplateWrapper classes="blog-list" seoSchema={defaultSchema()}>
+            <main className="main-container" role="list">
+              <HeadingBlock importance={10} width={350}>
+                Posts da Categoria: {props.pageContext.categories}
+              </HeadingBlock>
+              <Layout
+                type="ROW"
+                opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
+              >
                 <PostsBlock
-                  postList={tagListFiltered}
+                  postList={categoriesListFiltered}
                   postsPerPage={site.siteMetadata.postsPerPage}
                   readMoreText="Ler Mais"
                   pagination={{
@@ -68,12 +68,12 @@ const TagListPage = props => {
                     loadMore: 'Ler Mais',
                   }}
                 />
-              </main>
-            </Layout>
+              </Layout>
+            </main>
           </MainTemplateWrapper>
         )
       }}
     />
   )
 }
-export default TagListPage
+export default CategoryListPage

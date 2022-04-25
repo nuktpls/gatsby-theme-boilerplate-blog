@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-export const useSiteMetadatas = () => {
-  const site = useStaticQuery(
+export const useSiteMetadatas = () =>
+  useStaticQuery(
     graphql`
       query {
         site {
@@ -44,7 +44,7 @@ export const useSiteMetadatas = () => {
               frontmatter {
                 date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
                 title
-                tags
+                categories
                 footerFeaturedImage: featuredImage {
                   childrenImageSharp {
                     gatsbyImageData(
@@ -138,5 +138,3 @@ export const useSiteMetadatas = () => {
       }
     `
   )
-  return site
-}

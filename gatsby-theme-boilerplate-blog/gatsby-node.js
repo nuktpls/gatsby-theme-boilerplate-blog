@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
               title
               author
               featuredPost
-              tags
+              categories
               featuredImage {
                 childrenImageSharp {
                   gatsbyImageData(
@@ -56,8 +56,8 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      tagsGroup: allMarkdownRemark(limit: 800) {
-        group(field: frontmatter___tags) {
+      categoriesGroup: allMarkdownRemark(limit: 800) {
+        group(field: frontmatter___categories) {
           fieldValue
           nodes {
             headings {
@@ -92,17 +92,17 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const tags = result.data.tagsGroup.group
-    // Make tag pages
-    tags.forEach(tag => {
+    const categories = result.data.categoriesGroup.group
+    // Make category pages
+    categories.forEach(category => {
       createPage({
-        path: `/tags/${_.kebabCase(tag.fieldValue)}`,
+        path: `/category/${_.kebabCase(category.fieldValue)}/`,
         component: path.resolve(
           rootDir,
-          'gatsby-theme-boilerplate-blog/src/templates/tag-list-page.js'
+          'gatsby-theme-boilerplate-blog/src/templates/category-list-page.js'
         ),
         context: {
-          tag: tag.fieldValue,
+          categories: category.fieldValue,
           siteMetadata: result.data.siteMetadata,
           footerThreeMarkdowRemark: result.data.footerThreeMarkdowRemark,
           postsPerPage: result.data.postsPerPage,

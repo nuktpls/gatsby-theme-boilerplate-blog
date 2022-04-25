@@ -27,7 +27,7 @@ const IndexPage = props => {
   }
   const featuredPosts = findItem(posts)
   return (
-    <MainTemplateWrapper seoSchema={defaultSchema}>
+    <MainTemplateWrapper seoSchema={defaultSchema()}>
       <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
         <Layout
           type="BLOCK_IMAGE"
@@ -103,7 +103,7 @@ export const queryAtividade = graphql`
           frontmatter {
             date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
             title
-            tags
+            categories
             featuredPost
             featuredImage {
               childrenImageSharp {

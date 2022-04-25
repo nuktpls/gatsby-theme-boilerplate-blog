@@ -35,6 +35,8 @@ GatsbyJS HTML customized structures.
 
 **Plugin Install:** `npm i`
 
+**Theme Start Install:** `yarn workspace engine dev`
+
 **Version:** 0.0.1
 
 **Year:** 2022

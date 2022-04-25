@@ -11,11 +11,9 @@ import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
 
 const MainTemplateWrapper = ({ children, seoSchema, classes }) => {
   const { githubImg, instaImg, twitterImg, whatsImg } = useSiteMetadatas()
-
   return (
     <BodyBlock opt={{ classes: classes }}>
       <SeoContainer opt={seoSchema} />
-
       <HeaderBlock logotipoSvg={<BoilerplateLogo />} />
       {children}
       <NewFooterBlock
