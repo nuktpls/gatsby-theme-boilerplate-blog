@@ -93,18 +93,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          businessInfos.importFont.font01,
-          businessInfos.importFont.font02,
-          businessInfos.importFont.font03,
-          businessInfos.importFont.font04,
-        ],
-        display: 'swap',
-      },
-    },
+    // {
+    //   resolve: `@slixites/gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       businessInfos.importFont.font01,
+    //       businessInfos.importFont.font02,
+    //       businessInfos.importFont.font03,
+    //       businessInfos.importFont.font04,
+    //     ],
+    //     display: 'swap',
+    //     preconnect: true,
+    //     attributes: {
+    //       rel: 'stylesheet preload prefetch',
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {

@@ -25,7 +25,11 @@ const SinglePostBlock = ({
           }}
         >
           <div className="header-post">
-            <Layout type="ROW" opt={{ isBoxed: true, classes: 'post' }}>
+            <Layout
+              type="ROW"
+              opt={{ isBoxed: true, classes: 'post', alignTo: 'center' }}
+            >
+              <h1>{title}</h1>
               <div className="post-categories-wrapper">
                 {categories.map((e, i) => {
                   return (
@@ -39,7 +43,6 @@ const SinglePostBlock = ({
                   )
                 })}
               </div>
-              <h1>{title}</h1>
             </Layout>
           </div>
         </Layout>

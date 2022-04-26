@@ -27,7 +27,8 @@
 		font-family: $second__font;
 		font-size: 36px;
 		font-weight: 500;
-		line-height: 42px;
+		line-height: 52px;
+		margin: 0 auto 15px;
 		@media (max-width:420px) {
 		font-size: 26px;
 		}
@@ -36,15 +37,26 @@
 		height: 100%;
     display: flex;
     align-items: center;
-		.boxed-column-child.post{
-			margin-left: 0;
-		}
+		// .boxed-column-child.post{
+			// margin-left: 0;
+		// }
 	}
 
 }
 .boxed-column.main-post{
 	max-width: $page__size;
-	margin: 0 auto;
+	margin: 0 auto 50px;
+	padding: 20px;
+	background: white;
+	border-radius: 15px;
+	margin-top: -100px;
+	position: relative;
+	box-shadow: 0px 15px 15px 3px rgba(144, 144, 144, 0.05);
+	border: 2px solid transparent;
+	&:hover{
+	border: 2px solid $primary_light;
+	}
+
 }
 }
 
