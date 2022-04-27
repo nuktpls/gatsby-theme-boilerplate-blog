@@ -56,38 +56,77 @@
 	&:hover{
 	border: 2px solid $primary_light;
 	}
-
 }
 }
 
 .post-categories-wrapper{
-	margin-left: -5px;
-	margin-bottom: 5px;
-.post-categories{
-		background-color: $cta__color;
-		display: inline-block;
-		font-size: 10px;
-		font-family: $main__font;
-    padding: 6px;
-		color: white;
-		font-weight: 700;
-		text-transform: capitalize;
-    white-space: nowrap;
-		margin:0 5px 5PX;
-		&:nth-child(even){
-		background-color: #9300ca;
+	line-height: 30px;
+	border: 1px solid $primary;
+	p{
+		border-right: 1px solid $primary;
+		font-family: $third__font;
+		padding: 2px 10px;
+		color: $primary;
+		line-height: 20px;
+    display: inline-block;
 	}
-}}
+	.post-categories{
+		display: inline-block;
+		font-size: 16px;
+		font-family: $main__font;
+    padding: 4px;
+		color: $primary;
+		font-weight: 700;
+		text-transform: lowercase;
+    white-space: nowrap;
+		margin:0 5px;
+
+		&:nth-child(even){
+		color: $primary_dark;
+	}
+	&:hover{
+		background-color: $primary_dark;
+		color: white;
+	}
+}
+}
 .post-author{
-	display: grid;
-	grid-template-columns: 0.2fr 1fr;
+	margin-bottom: 20px;
+	.post-author-infos{
+
+		@media (max-width:420px) {
+			grid-template-columns: repeat(1, 1fr)!important;
+			.editorial-infos{
+				margin-top: 15px;
+			}
+		}
+	}
+	.editorial-infos{
+		align-self: center;
+		&.full-width-row-child{
+			max-width: 300px;
+			margin: 0 0 0 auto;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			p{
+				color: $primary;
+				font-family: $third__font;
+				font-size: 18px;
+				font-variant-caps: petite-caps;
+			}
+		}
+	}
+	.inner-post-author-infos{
+		display: grid;
+		grid-template-columns: 0.3fr 1fr;
+    align-items: center;
 	@media (max-width:590px) {
 		grid-template-columns: 0.27fr 1fr;
 	}
 	@media (max-width:420px) {
-		grid-template-columns: 0.45fr 1fr;
+		grid-template-columns: 0.6fr 1fr;
 	}
-	margin-bottom: 50px;
+}
 
 .author-img{
 	border: 2px solid #fc4303;
@@ -196,13 +235,14 @@
 }
 	.post-author-date{
 		font-weight: 300;
-		font-size: 12px;
+		font-size: 14px;
 		color: $paragrahp_black__color;
 	}
 	.post-author-name{
 		color: $cta__color;
-		font-weight: 300;
-		font-size: 18px;
+		font-weight: 500;
+		font-size: 19px;
+		font-family: $third__font;
 	}
 }
 }

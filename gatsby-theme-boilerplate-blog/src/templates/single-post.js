@@ -24,6 +24,8 @@ const SinglePost = ({ data, location }) => {
           html={post.html}
           title={post.frontmatter.title}
           categories={post.frontmatter.categories}
+          timeToRead={post.timeToRead}
+          wordCount={post.wordCount}
         />
       </main>
     </MainTemplateWrapper>
@@ -54,6 +56,12 @@ export const query = graphql`
       html
       fields {
         slug
+      }
+      timeToRead
+      wordCount {
+        paragraphs
+        sentences
+        words
       }
     }
   }

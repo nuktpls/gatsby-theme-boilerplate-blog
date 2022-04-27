@@ -12,6 +12,8 @@ const SinglePostBlock = ({
   html,
   categories,
   title,
+  timeToRead,
+  wordCount,
 }) => {
   return (
     <article>
@@ -30,19 +32,6 @@ const SinglePostBlock = ({
               opt={{ isBoxed: true, classes: 'post', alignTo: 'center' }}
             >
               <h1>{title}</h1>
-              <div className="post-categories-wrapper">
-                {categories.map((e, i) => {
-                  return (
-                    <Link
-                      to={`/category/${_.kebabCase(e)}/`}
-                      className="post-categories"
-                      key={i}
-                    >
-                      {e}
-                    </Link>
-                  )
-                })}
-              </div>
             </Layout>
           </div>
         </Layout>
@@ -50,21 +39,51 @@ const SinglePostBlock = ({
           <div className="container">
             <div className="post-author">
               <Layout
-                type="BLOCK_IMAGE"
-                opt={{
-                  queryCard: authorImg,
-                  alt: 'Boileplate Holder',
-                  classes: 'author-img',
-                }}
-              />
-              <div className="post-author-infos">
-                <time className="post-author-date" dateTime={date}>
-                  {date}
-                </time>
-                <p className="post-author-name" rel="author">
-                  {author}
-                </p>
-              </div>
+                type="ROW"
+                opt={{ numColumns: 2, classes: 'post-author-infos' }}
+              >
+                <div className="inner-post-author-infos">
+                  <Layout
+                    type="BLOCK_IMAGE"
+                    opt={{
+                      queryCard: authorImg,
+                      alt: 'Boileplate Holder',
+                      classes: 'author-img',
+                    }}
+                  />
+                  <div className="innerauthor-infos">
+                    <p className="post-author-name" rel="author">
+                      {author}
+                    </p>
+                    <time className="post-author-date" dateTime={date}>
+                      {date}
+                    </time>
+                  </div>
+                </div>
+                <Layout
+                  type="ROW"
+                  opt={{ classes: 'editorial-infos', numColumns: 2 }}
+                >
+                  <p className="timeToread">{timeToRead} min. to read</p>
+                  <p className="wordCount">{wordCount.paragraphs} paragraphs</p>
+                  <p className="wordCount">{wordCount.sentences} sentences</p>
+                  <p className="wordCount">{wordCount.words} words</p>
+                </Layout>
+              </Layout>
+            </div>
+            <div className="post-categories-wrapper">
+              <p>Trends</p>
+              {categories.map((e, i) => {
+                return (
+                  <Link
+                    to={`/category/${_.kebabCase(e)}/`}
+                    className="post-categories"
+                    key={i}
+                  >
+                    #{e}
+                  </Link>
+                )
+              })}
             </div>
             <div>
               <Layout
