@@ -13,3 +13,4 @@ public
 !.github/*
 !.vscode/*
 !*.code-workspace
+yarn-error.log
