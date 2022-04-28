@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import MainPageWrapper from '@BlockBuilder/MainPageWrapper'
 import { defaultSchema } from '../configs/schemas'
 
