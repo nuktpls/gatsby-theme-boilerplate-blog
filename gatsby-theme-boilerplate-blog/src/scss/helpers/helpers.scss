@@ -93,14 +93,6 @@ footer{
 }
 
 
-html,
-body {
-    &,
-    * {
-        cursor: none;
-    }
-}
-
 .cursor-dot {
     background-color: $cta__contrast_color;
 }
@@ -296,5 +288,24 @@ body {
 		}
 		em{
 			font-style: italic;
+		}
+	}
+
+	.main-page-wrapper{
+		.page-container{
+			max-width: $page__size;
+			margin: 10px auto;
+		}
+	}
+
+
+	sup{
+		a{
+			font-weight: 900;
+			vertical-align: super;
+			color: $cta__color;
+			font-size: 14px;
+			margin-left: -10px;
+			padding: 5px;
 		}
 	}

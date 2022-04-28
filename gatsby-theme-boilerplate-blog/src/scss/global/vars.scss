@@ -23,7 +23,8 @@ $selection_bg__color: #2e2e2e;
 $selection_txt__color: #fff;
 // Breakpoints
 // screen vars
-$page__size: 1020px;
+$post_page__size: 1020px;
+$page__size: 960px;
 $paragraph__size: 960px;
 $widescreen__size: 1165px;
 $tablet__size: 768px;
@@ -39,7 +40,6 @@ $boxedDesktop__maxWidth: 1024px;
 $boxedMobile__maxWidth: 375px;
 //Spaces
 $s__space: 16pt;
-$heading__top-padding: 0;
 
 // typograph
 $alternative__font: 'Arial';

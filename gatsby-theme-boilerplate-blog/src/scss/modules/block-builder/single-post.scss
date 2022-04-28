@@ -15,7 +15,7 @@
 		background-color: #111e24;
 		min-height: 270px;
 		width: 100%;
-		max-width: $page__size;
+		max-width: $post_page__size;
 		margin: 0 auto;
 		.post.boxed-column{
 		padding: 0 10px;
@@ -44,7 +44,7 @@
 
 }
 .boxed-column.main-post{
-	max-width: $page__size;
+	max-width: $post_page__size;
 	margin: 0 auto 30px;
 	padding: 20px;
 	background: white;

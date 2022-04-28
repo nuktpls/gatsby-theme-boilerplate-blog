@@ -2,6 +2,9 @@
 	color: $selection_txt__color;
 	background: $primary-ultradark;
 }
+html{
+	scroll-behavior: smooth;
+}
 body {
 	// background-color: $primary_background__color;
 	overflow-x: hidden;
