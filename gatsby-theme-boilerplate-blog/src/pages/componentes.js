@@ -1,85 +1,33 @@
 import React from 'react'
-import Layout from 'gatsby-layout-builder'
-import MainTemplateWrapper from '@BlockBuilder/MainTemplateWrapper'
-import HeadingBlock from '@BlockBuilder/HeadingBlock'
+import MainPageWrapper from '@BlockBuilder/MainPageWrapper'
 import { defaultSchema } from '../configs/schemas'
-import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 
 const Componentes = ({ location }) => {
-  const { bannerContent } = useSiteMetadatas()
   return (
-    <MainTemplateWrapper seoSchema={defaultSchema(location)}>
-      <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
-        <Layout
-          type="BLOCK_IMAGE"
-          opt={{
-            queryCard: bannerContent,
-            hasLink: true,
-            link: 'linkUrl',
-            staticImage: true,
-            publicImageUrl: bannerContent,
-            alt: 'title',
-            placeholder: 'NONE',
-            classes: '',
-          }}
-        />
-      </Layout>
-      <main className="main-container" id="site-content" role="list">
-        <HeadingBlock classes="m30auto" importance={9} width={400}>
-          Componentes
-        </HeadingBlock>
-        <Layout
-          type="ROW"
-          opt={{
-            isBoxed: true,
-            classes: 'main-container-wrapper page-container',
-          }}
-        >
-          <h2>Vamos falar sobre componentes?</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-            architecto earum laudantium sapiente? Voluptatibus consectetur sunt
-            et? Blanditiis perspiciatis aspernatur minima, reprehenderit, iste
-            quos fugiat veniam, deleniti et similique asperiores. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Modi architecto earum
-            laudantium sapiente? Voluptatibus consectetur sunt et? Blanditiis
-            perspiciatis aspernatur minima, reprehenderit, iste quos fugiat
-            veniam, deleniti et similique asperiores.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-            architecto earum laudantium sapiente? Voluptatibus consectetur sunt
-            et? Blanditiis perspiciatis aspernatur minima, reprehenderit, iste
-            quos fugiat veniam, deleniti et similique asperiores.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-            architecto earum laudantium sapiente? Voluptatibus consectetur sunt
-            et? Blanditiis perspiciatis aspernatur minima, reprehenderit, iste
-            quos fugiat veniam, deleniti et similique asperiores.
-          </p>
-          <h2>Mais componentes?</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-            architecto earum laudantium sapiente? Voluptatibus consectetur sunt
-            et? Blanditiis perspiciatis aspernatur minima, reprehenderit, iste
-            quos fugiat veniam, deleniti et similique asperiores.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-            architecto earum laudantium sapiente? Voluptatibus consectetur sunt
-            et? Blanditiis perspiciatis aspernatur minima, reprehenderit, iste
-            quos fugiat veniam, deleniti et similique asperiores.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-            architecto earum laudantium sapiente? Voluptatibus consectetur sunt
-            et? Blanditiis perspiciatis aspernatur minima, reprehenderit, iste
-            quos fugiat veniam, deleniti et similique asperiores.
-          </p>
-        </Layout>
-      </main>
-    </MainTemplateWrapper>
+    <MainPageWrapper seoSchema={defaultSchema(location)} title="Componentes">
+      <p>
+        O mundo da programação e da internet pode ser resumido como um gigante
+        serviço de correspondência. Cartas são enviadas para todos os lados na
+        velocidade da luz contendo textos que serão interpretados por um
+        dispositivo eletrônico.
+      </p>
+      <p>
+        Existém <em>"coisas"</em> nesse mundo que são <em>"algo"</em> apenas
+        porque fazem parte de um todo. Esses mecanismos são chamados de
+        componentes e são encontrados nos mais diversos ambientes.
+      </p>
+      <h2>O que são componentes?</h2>
+      <p>
+        Um componente é parte de um módulo. Serve para reutilizar códigos,
+        mudando apenas o que é necessário dentro de uma repetição inteligente. É
+        comum encontrar componentes visuais, mas também existem componentes que
+        são mais complexos, como por exemplo, o componente de formulário.
+      </p>
+
+      <blockquote cite="http://developer.mozilla.org">
+        <p>Zumba frenética.</p>
+      </blockquote>
+    </MainPageWrapper>
   )
 }
 
