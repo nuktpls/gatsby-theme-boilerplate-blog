@@ -27,8 +27,8 @@
 		font-family: $second__font;
 		font-size: 36px;
 		font-weight: 500;
-		line-height: 52px;
-		margin: 0 auto 15px;
+		line-height: 40px;
+		margin: 0 auto 40px;
 		@media (max-width:420px) {
 		font-size: 26px;
 		}
@@ -45,7 +45,7 @@
 }
 .boxed-column.main-post{
 	max-width: $page__size;
-	margin: 0 auto 50px;
+	margin: 0 auto 30px;
 	padding: 20px;
 	background: white;
 	border-radius: 15px;
@@ -72,11 +72,11 @@
 	}
 	.post-categories{
 		display: inline-block;
-		font-size: 16px;
-		font-family: $main__font;
+		font-size: 14px;
+		font-family: $second__font;
     padding: 4px;
 		color: $primary;
-		font-weight: 700;
+		font-weight: 600;
 		text-transform: lowercase;
     white-space: nowrap;
 		margin:0 5px;
@@ -146,7 +146,7 @@
 		font-weight: 300;
 		color: $paragrahp_black__color;
 		max-width: $paragraph__size;
-		margin: 0 auto;
+		margin: 0 auto 50px;
 		p{
 		font-family: $fourth__font;
 		font-weight: 300;

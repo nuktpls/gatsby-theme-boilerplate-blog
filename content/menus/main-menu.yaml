@@ -1,22 +1,22 @@
 menu:
-  status: active
+  status: true
   name: MAIN_MENU
   items:
     - item:
-        label: Cursos
-        href: /cursos
+        label: Componentes
+        href: /componentes
     - item:
-        label: O Que é a Boileplate?
-        href: /sobre
+        label: Módulos
+        href: /modulos
     - item:
-        label: Para empresas
-        href: /empresas
+        label: Documentação
+        href: /documentacao
     - item:
-        label: Blog
-        to: /
+        label: Contato
+        to: /contato
     - item:
         icon: bag
     - item:
-        search_widget: true
+        search_widget: false
         search_label: Procure um curso
         search_url_prefix: /cursos?search=

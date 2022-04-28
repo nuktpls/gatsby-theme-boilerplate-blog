@@ -55,7 +55,7 @@ const CategoryListPage = props => {
             seoSchema={defaultSchema(props.location)}
           >
             <main className="main-container" role="list">
-              <HeadingBlock importance={10} width={350}>
+              <HeadingBlock classes="m30auto" importance={9} width={400}>
                 Posts da Categoria: {props.pageContext.categories}
               </HeadingBlock>
               <Layout

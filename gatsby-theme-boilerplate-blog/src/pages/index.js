@@ -44,7 +44,7 @@ const IndexPage = props => {
         />
       </Layout>
       <main className="main-container" id="site-content" role="list">
-        <HeadingBlock classes="m50auto hack" importance={9} width={400}>
+        <HeadingBlock classes="m30auto hack" importance={9} width={400}>
           Featured Posts
         </HeadingBlock>
         <Layout
@@ -63,7 +63,7 @@ const IndexPage = props => {
             classes="colorME"
           />
         </Layout>
-        <HeadingBlock classes="m50auto" importance={9} width={400}>
+        <HeadingBlock classes="m30auto" importance={9} width={400}>
           Posts
         </HeadingBlock>
         <Layout

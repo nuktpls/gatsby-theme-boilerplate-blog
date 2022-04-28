@@ -8394,10 +8394,10 @@ gatsby-layout-builder-seo@^0.4.83:
     react-helmet "^6.1.0"
     web-vitals "^2.1.4"
 
-gatsby-layout-builder@^0.7.80:
-  version "0.7.80"
-  resolved "https://registry.yarnpkg.com/gatsby-layout-builder/-/gatsby-layout-builder-0.7.80.tgz#9df8044c24e2ff0d5737798a674f308f62f332c0"
-  integrity sha512-enIiAenfnc5cHMfiiOdEz/WoWUc93Xs5qiIKDHo4hyqYmgRfYRP+cLcm+wXe2erm6mEsLPnyfLnghS9eTJ9UqQ==
+gatsby-layout-builder@^0.7.82:
+  version "0.7.82"
+  resolved "https://registry.yarnpkg.com/gatsby-layout-builder/-/gatsby-layout-builder-0.7.82.tgz#00f9c210648912e99d3a6e631e7a5c686bf39752"
+  integrity sha512-kQY0JmVpB49AKiG7CzvaNd9sVSHUJiUKEJaAKFaGnhFByUQlYxjV6jFJZkhor92rVl30k335dnZtVHcfgTNEtw==
   dependencies:
     gatsby "^4.12.0"
     gatsby-plugin-image "^2.11.1"

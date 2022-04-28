@@ -261,7 +261,36 @@ body {
 
 
 
-.m50auto{
-	margin: 50px auto;
+.m30auto{
+	margin: 30px auto;
 
 }
+
+	.main-ul{
+		height: 29px;
+		font-size: 14px;
+		display: flex;
+		max-width: $widescreen__size;
+		width: 100%;
+		margin: 0 auto;
+		li{ padding: 0 25px; a{
+			color:white; font-family: $third__font; line-height: 33px;
+			&:hover{
+				color: $primary_light;
+			}
+		}}
+	}
+
+
+
+	.page-container{
+		p{
+			margin: 10px auto;
+			font-family: $third__font;
+			font-weight: 300;
+			font-size: 20px;
+		}
+		h1, h2, h3, h4, h5, h6{
+			margin: 15px 0;
+		}
+	}

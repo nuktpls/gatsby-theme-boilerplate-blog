@@ -1,17 +1,17 @@
 main_menu:
   - link: {
-      label: Cursos,
-      href: /cursos
+      label: Componentes,
+      href: /componentes
     }
   - link: {
-      label: O Que é a Boileplate?,
-      href: /sobre
+      label: Módulos,
+      href: /modulos
     }
   - link: {
-      label: Para empresas,
-      href: /empresas
+      label: Documentação,
+      href: /documentacao
     }
   - link: {
-      label: Blog,
-      to: /
+      label: Contato,
+      to: /contato
     }

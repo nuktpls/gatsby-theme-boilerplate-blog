@@ -4,7 +4,7 @@ import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import BoilerplateLogo from '@Images/boilerplate-blog-logo.svg'
 const NewFooterBlock = ({ githubImg, instaImg, twitterImg, whatsImg }) => (
   <>
-    <HeadingBlock classes="m50auto hack" importance={9} width={400}>
+    <HeadingBlock classes="m30auto hack" importance={9} width={400}>
       Social
     </HeadingBlock>
     <Layout type={'ROW'} opt={{ isBoxed: true }}>

@@ -8,7 +8,7 @@ const Template = ({ location }) => {
   return (
     <MainTemplateWrapper seoSchema={defaultSchema(location)}>
       <main className="main-container" id="site-content" role="list">
-        <HeadingBlock classes="m50auto" importance={9} width={400}>
+        <HeadingBlock classes="m30auto" importance={9} width={400}>
           Template
         </HeadingBlock>
         <Layout
