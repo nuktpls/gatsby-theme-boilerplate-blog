@@ -7,7 +7,7 @@ backend:
 # local_backend: true
 publish_mode: editorial_workflow
 media_folder: posts/images
-public_folder: /engine/images
+public_folder: ../posts/images
 
 slug:
   encoding: 'ascii'
