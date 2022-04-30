@@ -13,3 +13,7 @@ public
 !.github/*
 !.vscode/*
 !*.code-workspace
+yarn-error.log
+yarn.lock
+gatsby-theme-boilerplate-blog/storybook-static
+gatsby-theme-boilerplate-blog/yarn-error.log

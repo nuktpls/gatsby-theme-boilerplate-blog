@@ -10,13 +10,11 @@
 		"dev": "gatsby develop"
 	},
 	"dependencies": {
-		"gatsby": "^4.12.1",
-		"gatsby-source-filesystem": "^4.12.1",
+		"gatsby": "^4.13.0",
+		"gatsby-source-filesystem": "^4.13.0",
 		"gatsby-theme-boilerplate-blog": "*",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0"
 	},
-	"devDependencies": {
-		"gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27"
-	}
+	"devDependencies": {}
 }

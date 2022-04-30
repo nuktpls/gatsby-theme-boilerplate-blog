@@ -1,6 +1,8 @@
 import React from 'react'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-import Layout from 'gatsby-layout-builder'
+import { Row } from '../../components/InsertRow'
+
 import SeoContainer from 'gatsby-layout-builder-seo'
 import HeadingBlock from '@BlockBuilder/HeadingBlock'
 import { useSiteMetadatas } from '../../tools/useSiteMetadatas'
@@ -9,7 +11,7 @@ import BoilerplateLogo from '@Images/boilerplate-blog-logo.svg'
 import BodyBlock from '@BlockBuilder/BodyBlock'
 import HeaderBlock from '@BlockBuilder/HeaderBlock'
 
-import NewFooterBlock from '@BlockBuilder/NewFooterBlock'
+import FooterBlock from '@BlockBuilder/FooterBlock'
 
 const MainPageWrapper = ({ children, title, seoSchema, classes }) => {
   const {
@@ -19,40 +21,35 @@ const MainPageWrapper = ({ children, title, seoSchema, classes }) => {
     whatsImg,
     bannerContent,
   } = useSiteMetadatas()
+  const imageQuery = getImage(bannerContent.childrenImageSharp[0])
+
   return (
     <BodyBlock opt={{ classes: classes }}>
       <SeoContainer opt={seoSchema} />
       <HeaderBlock logotipoSvg={<BoilerplateLogo />} />
-      <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
-        <Layout
-          type="BLOCK_IMAGE"
-          opt={{
-            queryCard: bannerContent,
-            hasLink: true,
-            link: 'linkUrl',
-            staticImage: true,
-            publicImageUrl: bannerContent,
-            alt: 'title',
-            placeholder: 'NONE',
-            classes: '',
-          }}
+      <Row opt={{ classes: 'banner colorME', isBoxed: true }}>
+        <GatsbyImage
+          image={imageQuery}
+          alt={'Imagem em Destaque'}
+          placeholder={'NONE'}
+          critical="true"
+          className={'highlight-img'}
         />
-      </Layout>
+      </Row>
       <main className="main-container" id="site-content" role="list">
         <HeadingBlock classes="m30auto" importance={9} width={400}>
           {title}
         </HeadingBlock>
-        <Layout
-          type="ROW"
+        <Row
           opt={{
             isBoxed: true,
             classes: 'main-container-wrapper page-container',
           }}
         >
           {children}
-        </Layout>
+        </Row>
       </main>
-      <NewFooterBlock
+      <FooterBlock
         githubImg={githubImg}
         instaImg={instaImg}
         twitterImg={twitterImg}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { Link } from 'gatsby'
-import Layout from 'gatsby-layout-builder'
+import { Row } from '../../components/InsertRow'
 import PostCard from './PostCard'
 
 const PostsBlock = ({
@@ -42,8 +42,7 @@ const PostsBlock = ({
   return (
     <div className="post-cards-wrapper">
       <section>
-        <Layout
-          type="ROW"
+        <Row
           opt={{
             numColumns: 'auto-fit',
             classes: 'post-cards-row',
@@ -75,11 +74,8 @@ const PostsBlock = ({
               )
             }
           )}
-        </Layout>
-        <Layout
-          type="ROW"
-          opt={{ numRows: 1, isBoxed: true, classes: 'pagination' }}
-        >
+        </Row>
+        <Row opt={{ numRows: 1, isBoxed: true, classes: 'pagination' }}>
           {pagination.loadMoreBtn === true ? (
             <p className="btn-load-more">{btnLoadMore}</p>
           ) : (
@@ -91,7 +87,7 @@ const PostsBlock = ({
               {!isLast && <Link to={nextPage}>próxima página →</Link>}
             </>
           )}
-        </Layout>
+        </Row>
       </section>
     </div>
   )

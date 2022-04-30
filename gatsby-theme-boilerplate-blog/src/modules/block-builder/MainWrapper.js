@@ -1,10 +1,8 @@
 import React from 'react'
-import Layout from 'gatsby-layout-builder'
-
+import { Row } from '../components/InsertRow'
 const MainWrapper = ({ children, title, opt }) => {
   return (
-    <Layout
-      type="ROW"
+    <Row
       opt={{
         isBoxed: opt.isBoxed,
         classes:
@@ -17,7 +15,7 @@ const MainWrapper = ({ children, title, opt }) => {
       }}
     >
       {children}
-    </Layout>
+    </Row>
   )
 }
 

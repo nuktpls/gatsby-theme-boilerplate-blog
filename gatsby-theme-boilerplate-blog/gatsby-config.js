@@ -34,7 +34,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-anchor-links`,
-    `gatsby-layout-builder`,
+    {
+      resolve: 'gatsby-layout-builder',
+    },
     `gatsby-layout-builder-seo`,
     `gatsby-layout-builder-a11y`,
     `gatsby-layout-builder-cursor`,

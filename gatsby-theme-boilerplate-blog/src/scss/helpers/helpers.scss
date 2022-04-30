@@ -163,7 +163,7 @@ footer{
 
 
 .social-icons{
-	.boxed-column-child{
+	&.boxed-column-child{
 		justify-items: center;
     max-width: 320px;
 	svg{
