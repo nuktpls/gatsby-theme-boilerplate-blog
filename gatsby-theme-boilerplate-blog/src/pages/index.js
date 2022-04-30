@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-import Layout from 'gatsby-layout-builder'
+import { Row } from '../components/InsertRow'
 
 import { useSiteMetadatas } from '../tools/useSiteMetadatas'
 import PostsBlock from '@BlockBuilder/PostsBlock'
@@ -26,31 +27,25 @@ const IndexPage = props => {
     return x
   }
   const featuredPosts = findItem(posts)
+  const imageQuery = getImage(bannerContent.childrenImageSharp[0])
   return (
     <MainTemplateWrapper seoSchema={defaultSchema(props.location)}>
-      <Layout type="ROW" opt={{ classes: 'banner colorME', isBoxed: true }}>
-        <Layout
-          type="BLOCK_IMAGE"
-          opt={{
-            queryCard: bannerContent,
-            hasLink: true,
-            link: 'linkUrl',
-            staticImage: true,
-            publicImageUrl: bannerContent,
-            alt: 'title',
-            placeholder: 'NONE',
-            classes: '',
-          }}
+      <Row
+        opt={{ classes: 'banner colorME', isBoxed: true, role: 'something' }}
+      >
+        <GatsbyImage
+          image={imageQuery}
+          alt={'title'}
+          placeholder={'NONE'}
+          critical="true"
+          className={''}
         />
-      </Layout>
+      </Row>
       <main className="main-container" id="site-content" role="list">
         <HeadingBlock classes="m30auto hack" importance={9} width={400}>
           Featured Posts
         </HeadingBlock>
-        <Layout
-          type="ROW"
-          opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
-        >
+        <Row opt={{ isBoxed: true, classes: 'main-container-wrapper' }}>
           <PostsBlock
             postsPerPage={site.siteMetadata.postsPerPage}
             postList={featuredPosts}
@@ -62,14 +57,11 @@ const IndexPage = props => {
             }}
             classes="colorME"
           />
-        </Layout>
+        </Row>
         <HeadingBlock classes="m30auto" importance={9} width={400}>
           Posts
         </HeadingBlock>
-        <Layout
-          type="ROW"
-          opt={{ isBoxed: true, classes: 'main-container-wrapper' }}
-        >
+        <Row opt={{ isBoxed: true, classes: 'main-container-wrapper' }}>
           <PostsBlock
             postsPerPage={site.siteMetadata.postsPerPage}
             postList={posts}
@@ -81,7 +73,7 @@ const IndexPage = props => {
             }}
             classes="colorME"
           />
-        </Layout>
+        </Row>
       </main>
     </MainTemplateWrapper>
   )

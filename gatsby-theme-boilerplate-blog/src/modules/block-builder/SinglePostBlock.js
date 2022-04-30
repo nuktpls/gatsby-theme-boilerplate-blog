@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import _ from 'lodash'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout from 'gatsby-layout-builder'
+import { Row } from '../../components/InsertRow'
 
 const SinglePostBlock = ({
   highlightImage,
@@ -15,11 +17,15 @@ const SinglePostBlock = ({
   timeToRead,
   wordCount,
 }) => {
+  const imageQuery = getImage(authorImg.childrenImageSharp[0])
+  const imageHighlightQuery = getImage(highlightImage.childrenImageSharp[0])
+
+  console.log('imageQuery:::')
+  console.log(imageQuery)
   return (
     <article>
       <section>
-        <Layout
-          type="ROW"
+        <Row
           opt={{
             isBoxed: false,
             classes: 'post-header',
@@ -27,29 +33,22 @@ const SinglePostBlock = ({
           }}
         >
           <div className="header-post">
-            <Layout
-              type="ROW"
-              opt={{ isBoxed: true, classes: 'post', alignTo: 'center' }}
-            >
+            <Row opt={{ isBoxed: true, classes: 'post', alignTo: 'center' }}>
               <h1>{title}</h1>
-            </Layout>
+            </Row>
           </div>
-        </Layout>
-        <Layout type="ROW" opt={{ isBoxed: true, classes: 'main-post' }}>
+        </Row>
+        <Row opt={{ isBoxed: true, classes: 'main-post' }}>
           <div className="container">
             <div className="post-author">
-              <Layout
-                type="ROW"
-                opt={{ numColumns: 2, classes: 'post-author-infos' }}
-              >
+              <Row opt={{ numColumns: 2, classes: 'post-author-infos' }}>
                 <div className="inner-post-author-infos">
-                  <Layout
-                    type="BLOCK_IMAGE"
-                    opt={{
-                      queryCard: authorImg,
-                      alt: 'Boileplate Holder',
-                      classes: 'author-img',
-                    }}
+                  <GatsbyImage
+                    image={imageQuery}
+                    alt={'Boileplate Holder'}
+                    placeholder={'NONE'}
+                    critical="true"
+                    className={'author-img'}
                   />
                   <div className="innerauthor-infos">
                     <p className="post-author-name" rel="author">
@@ -60,16 +59,13 @@ const SinglePostBlock = ({
                     </time>
                   </div>
                 </div>
-                <Layout
-                  type="ROW"
-                  opt={{ classes: 'editorial-infos', numColumns: 2 }}
-                >
+                <Row opt={{ classes: 'editorial-infos', numColumns: 2 }}>
                   <p className="timeToread">{timeToRead} min. to read</p>
                   <p className="wordCount">{wordCount.paragraphs} paragraphs</p>
                   <p className="wordCount">{wordCount.sentences} sentences</p>
                   <p className="wordCount">{wordCount.words} words</p>
-                </Layout>
-              </Layout>
+                </Row>
+              </Row>
             </div>
             <div className="post-categories-wrapper">
               <p>Trends</p>
@@ -86,13 +82,12 @@ const SinglePostBlock = ({
               })}
             </div>
             <div>
-              <Layout
-                type="BLOCK_IMAGE"
-                opt={{
-                  queryCard: highlightImage,
-                  alt: 'Imagem em Destaque',
-                  classes: 'highlight-img',
-                }}
+              <GatsbyImage
+                image={imageHighlightQuery}
+                alt={'Imagem em Destaque'}
+                placeholder={'NONE'}
+                critical="true"
+                className={'highlight-img'}
               />
             </div>
             <div
@@ -100,7 +95,7 @@ const SinglePostBlock = ({
               dangerouslySetInnerHTML={{ __html: html }}
             ></div>
           </div>
-        </Layout>
+        </Row>
       </section>
     </article>
   )

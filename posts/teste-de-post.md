@@ -7,7 +7,7 @@ categories:
   - tatwo
   - tagthree
 featuredPost: false
-featuredImage: ../posts/images/placeholder-01.jpg
+featuredImage: ../posts/images/screenshot-from-2022-04-04-14-46-34.png
 ---
 
 Test here.

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import Layout from 'gatsby-layout-builder'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const PostCard = ({
   postImage,
@@ -11,21 +10,18 @@ const PostCard = ({
   readMoreText,
   classes,
 }) => {
+  const imageQuery = getImage(postImage.childrenImageSharp[0])
   return (
     <div className="post-card" role="listitem" aria-label="Cartão de Postagem">
-      <Layout
-        type="BLOCK_IMAGE"
-        opt={{
-          queryCard: postImage,
-          hasLink: true,
-          link: linkUrl,
-          staticImage: true,
-          publicImageUrl: postImage,
-          alt: title,
-          placeholder: 'NONE',
-          classes: classes,
-        }}
-      />
+      <Link to={linkUrl}>
+        <GatsbyImage
+          image={imageQuery}
+          alt={'title'}
+          placeholder={'NONE'}
+          critical="true"
+          className={classes}
+        />
+      </Link>
       <div className="post-card-content">
         <Link to={linkUrl}>
           <h2>{title}</h2>
