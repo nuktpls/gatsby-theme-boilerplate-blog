@@ -14,7 +14,7 @@ jobs:
         dependency-stability: [ 'prefer-stable' ]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup Node.js here
         uses: actions/setup-node@v1
